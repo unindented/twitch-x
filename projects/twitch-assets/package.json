@@ -1,0 +1,32 @@
+{
+  "name": "twitch-assets",
+  "description": "Assets for Twitch.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "build/index.js",
+  "private": true,
+  "author": {
+    "name": "Daniel Perez Alvarez",
+    "email": "unindented@gmail.com",
+    "url": "https://unindented.org/"
+  },
+  "scripts": {
+    "clean:build": "shx rm -rf \"build/**/*.+(gif|icns|ico|iconset|png|svg|tiff)\"",
+    "clean": "run-p clean:*",
+    "export:all": "sketchtool export slices src/assets.sketch --output=build/ --save-for-web=YES --overwriting=YES --compact=YES",
+    "export": "run-p export:*",
+    "build:public-bg-svg": "node src/trianglify build/public/bg.svg",
+    "build:public-icon-ico": "convert build/public/favicon_48x48.png build/public/favicon_32x32.png build/public/favicon_16x16.png build/public/favicon.ico",
+    "build:tizen-icon-ico": "convert build/tizen/favicon_48x48.png build/tizen/favicon_32x32.png build/tizen/favicon_16x16.png build/tizen/favicon.ico",
+    "build:ui-icon-ico": "convert build/ui/favicon_48x48.png build/ui/favicon_32x32.png build/ui/favicon_16x16.png build/ui/favicon.ico",
+    "build:web-icon-ico": "convert build/web/favicon_48x48.png build/web/favicon_32x32.png build/web/favicon_16x16.png build/web/favicon.ico",
+    "build": "npm-run-all clean export --parallel build:*",
+    "test": "node -e \"// No tests here\""
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2",
+    "shelljs": "^0.7.8",
+    "shx": "^0.2.2",
+    "trianglify": "^1.0.1"
+  }
+}
