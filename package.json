@@ -1,0 +1,23 @@
+{
+  "name": "twitch-x",
+  "productName": "twitch-X",
+  "description": "Cross-platform client for Twitch.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Daniel Perez Alvarez",
+    "email": "unindented@gmail.com",
+    "url": "https://unindented.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unindented/twitch-x.git"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^2.0.0"
+  }
+}
