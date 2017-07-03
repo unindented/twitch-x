@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="<%= htmlWebpackPlugin.options.themeColor %>" />
+    <% if (htmlWebpackPlugin.options.csp) { %>
+      <meta http-equiv="Content-Security-Policy" content="<%= htmlWebpackPlugin.options.csp %>">
+    <% } %>
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="manifest" href="<%= require('./manifest.webmanifest') %>" />
+  </head>
+
+  <body>
+    <div id="nocss">
+      <p>
+        Your browser was unable to load all of <%= htmlWebpackPlugin.options.title %>'s resources. They may have been blocked by your firewall, proxy or browser configuration.
+      </p>
+    </div>
+    <noscript>
+      <h1>
+        To use <%= htmlWebpackPlugin.options.title %>, please enable JavaScript.
+      </h1>
+    </noscript>
+
+    <div id="root"></div>
+  </body>
+</html>

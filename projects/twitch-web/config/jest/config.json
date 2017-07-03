@@ -1,0 +1,16 @@
+{
+  "rootDir": "../../",
+  "cacheDirectory": ".jest",
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  },
+  "moduleNameMapper": {
+    "^.+\\.css$": "<rootDir>/config/jest/styleMock.js",
+    "^.+\\.(png|svg)$": "<rootDir>/config/jest/fileMock.js"
+  },
+  "coverageReporters": [
+    "text",
+    "text-summary",
+    "html"
+  ]
+}
