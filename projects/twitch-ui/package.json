@@ -1,17 +1,15 @@
 {
-  "name": "twitch-web",
-  "productName": "Twitch",
-  "description": "Web client for Twitch.",
+  "name": "twitch-ui",
+  "description": "UI components for Twitch.",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "src/index.js",
   "private": true,
   "author": {
     "name": "Daniel Perez Alvarez",
     "email": "unindented@gmail.com",
     "url": "https://unindented.org/"
   },
-  "themeColor": "#6441A4",
-  "backgroundColor": "#FFFFFF",
   "scripts": {
     "clean:build": "shx rm -rf build",
     "clean:coverage": "shx rm -rf coverage",
@@ -22,29 +20,24 @@
     "test": "run-p test:*",
     "watch:jest": "jest --watch --config config/jest/config.json",
     "watch": "run-p watch:*",
-    "build:dev": "webpack --config config/webpack/config.js --env development",
-    "build:prod": "webpack --config config/webpack/config.js --env production",
-    "build": "run-s clean build:prod",
-    "start:server": "webpack-dev-server --config config/webpack/config.js --env development --hot --inline",
+    "build:storybook": "build-storybook --config-dir config/storybook/ --static-dir node_modules/twitch-assets/build/ui/ --output-dir build/",
+    "build": "run-s clean build:storybook",
+    "start:server": "start-storybook --config-dir config/storybook/ --static-dir node_modules/twitch-assets/build/ui/ --port 8081",
     "start": "run-s start:server"
   },
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "twitch-assets": "*",
-    "twitch-ui": "*"
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
+    "@storybook/addon-options": "^3.2.4",
+    "@storybook/react": "^3.2.4",
     "autoprefixer": "^7.1.2",
-    "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
-    "babel-loader": "^7.1.1",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.4",
     "eslint": "^4.4.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
@@ -53,23 +46,15 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.2.1",
     "eslint-plugin-standard": "^3.0.1",
-    "expose-loader": "^0.7.3",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.30.1",
     "jest": "^20.0.4",
     "npm-run-all": "^4.0.2",
     "postcss": "^6.0.9",
-    "postcss-loader": "^2.0.6",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "shx": "^0.2.2",
-    "style-ext-html-webpack-plugin": "^3.4.1",
-    "style-loader": "^0.18.2",
     "stylelint": "^8.0.0",
     "stylelint-config-idiomatic-order": "^5.0.0",
-    "webmanifest-loader": "^0.2.1",
-    "webpack": "^3.5.4",
-    "webpack-dev-server": "^2.7.1",
-    "workbox-webpack-plugin": "^1.3.0"
+    "twitch-assets": "*"
   }
 }

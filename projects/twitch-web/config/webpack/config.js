@@ -48,7 +48,10 @@ module.exports = (environment) => {
       rules: [
         {
           test: /\.css$/,
-          include: input,
+          include: [
+            input,
+            path.dirname(require.resolve('twitch-ui'))
+          ],
           use: ExtractTextPlugin.extract({
             fallback: 'style-loader',
             use: [
@@ -69,7 +72,10 @@ module.exports = (environment) => {
         },
         {
           test: /\.js$/,
-          include: input,
+          include: [
+            input,
+            path.dirname(require.resolve('twitch-ui'))
+          ],
           use: {
             loader: 'babel-loader',
             options: {

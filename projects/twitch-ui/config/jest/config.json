@@ -8,9 +8,6 @@
     "^.+\\.css$": "<rootDir>/config/jest/styleMock.js",
     "^.+\\.(png|svg)$": "<rootDir>/config/jest/fileMock.js"
   },
-  "transformIgnorePatterns": [
-    "/node_modules/(?!twitch-ui)/"
-  ],
   "coverageReporters": [
     "text",
     "text-summary",
