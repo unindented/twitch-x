@@ -1,4 +1,4 @@
-# Twitch-X
+# Twitch-X [![Build status](https://img.shields.io/travis/unindented/twitch-x.svg)](https://travis-ci.org/unindented/twitch-x)
 
 Cross-platform client for Twitch.
 

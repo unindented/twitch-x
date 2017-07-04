@@ -15,9 +15,12 @@
     "url": "https://github.com/unindented/twitch-x.git"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap"
+    "test": "lerna run test",
+    "postinstall": "lerna bootstrap",
+    "prepush": "npm run test"
   },
   "devDependencies": {
+    "husky": "^0.14.3",
     "lerna": "^2.0.0"
   }
 }
