@@ -1,0 +1,12 @@
+{
+  "rootDir": "../../",
+  "cacheDirectory": ".jest",
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  },
+  "coverageReporters": [
+    "text",
+    "text-summary",
+    "html"
+  ]
+}

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`store/createStore with no options creates a store with no additional reducers 1`] = `
+Object {
+  "data": Object {
+    "count": Object {
+      "value": 0,
+    },
+  },
+}
+`;
+
+exports[`store/createStore with reducers creates a store with the additional reducers 1`] = `
+Object {
+  "data": Object {
+    "count": Object {
+      "value": 0,
+    },
+  },
+  "foo": Object {
+    "bar": "baz",
+  },
+}
+`;
+
+exports[`store/createStore with reducers processes actions 1`] = `
+Object {
+  "data": Object {
+    "count": Object {
+      "value": 0,
+    },
+  },
+  "foo": Object {
+    "bar": "baz",
+    "qux": "quux",
+  },
+}
+`;
+
+exports[`store/createStore with reducers processes thunk actions 1`] = `
+Object {
+  "data": Object {
+    "count": Object {
+      "value": 0,
+    },
+  },
+  "foo": Object {
+    "bar": "baz",
+    "qux": "quux",
+  },
+}
+`;
