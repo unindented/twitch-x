@@ -1,6 +1,11 @@
 import React from 'react'
-import Header from 'twitch-ui/src/components/Header'
+import Root from 'twitch-ui/src/components/Root'
+import Navigation from 'twitch-ui/src/components/Navigation'
 
 export default function App () {
-  return <Header />
+  return (
+    <Root>
+      <Navigation />
+    </Root>
+  )
 }

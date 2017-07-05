@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App renders 1`] = `<Header />`;
+exports[`App renders 1`] = `
+<Root>
+  <Navigation />
+</Root>
+`;

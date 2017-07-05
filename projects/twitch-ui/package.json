@@ -26,15 +26,17 @@
     "start": "run-s start:server"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "prop-types": "^15.5.10",
+    "react": "^15.6.0",
+    "styled-components": "^2.1.0"
   },
   "devDependencies": {
+    "@storybook/addon-knobs": "^3.2.0",
     "@storybook/addon-options": "^3.2.4",
     "@storybook/react": "^3.2.4",
-    "autoprefixer": "^7.1.2",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
+    "babel-plugin-styled-components": "^1.1.7",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
@@ -48,13 +50,15 @@
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^20.0.4",
     "npm-run-all": "^4.0.2",
-    "postcss": "^6.0.9",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
     "shx": "^0.2.2",
+    "storybook-addon-rtl": "^0.1.1",
+    "styled-components": "^2.1.2",
     "stylelint": "^8.0.0",
     "stylelint-config-idiomatic-order": "^5.0.0",
+    "stylelint-processor-styled-components": "^0.3.0",
     "twitch-assets": "*"
   }
 }

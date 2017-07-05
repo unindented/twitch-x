@@ -22,7 +22,10 @@ module.exports = (environment) => {
     }, isProduction ? {
       'vendor': [
         'react',
-        'react-dom'
+        'react-dom',
+        'styled-components',
+        'twitch-assets',
+        'twitch-ui'
       ]
     } : {}),
 
@@ -44,25 +47,25 @@ module.exports = (environment) => {
       hints: (isProduction ? 'error' : false)
     },
 
+    resolve: {
+      // Avoid duplicates coming from internal packages.
+      alias: {
+        'prop-types$': require.resolve('prop-types'),
+        'react$': require.resolve('react'),
+        'styled-components$': require.resolve('styled-components')
+      }
+    },
+
     module: {
       rules: [
         {
           test: /\.css$/,
-          include: [
-            input,
-            path.dirname(require.resolve('twitch-ui'))
-          ],
+          include: path.resolve(input, 'index.css'),
           use: ExtractTextPlugin.extract({
             fallback: 'style-loader',
             use: [
               {
                 loader: 'css-loader',
-                options: {
-                  sourceMap: true
-                }
-              },
-              {
-                loader: 'postcss-loader',
                 options: {
                   sourceMap: true
                 }

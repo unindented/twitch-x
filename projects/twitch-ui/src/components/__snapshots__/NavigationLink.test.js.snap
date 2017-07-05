@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationLink renders 1`] = `
+<NavigationLink__NavigationLinkRoot>
+  <NavigationLink__NavigationLinkReal
+    href="/"
+  >
+    <NavigationItem
+      icon="home"
+      iconAlt=""
+      label="Home"
+    />
+  </NavigationLink__NavigationLinkReal>
+</NavigationLink__NavigationLinkRoot>
+`;

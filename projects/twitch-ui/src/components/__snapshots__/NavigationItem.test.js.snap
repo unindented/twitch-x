@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationItem renders 1`] = `
+<NavigationItem__NavigationItemRoot>
+  <NavigationItemIcon
+    icon="home"
+    iconAlt=""
+  />
+  <NavigationItem__NavigationItemLabel>
+    Home
+  </NavigationItem__NavigationItemLabel>
+</NavigationItem__NavigationItemRoot>
+`;

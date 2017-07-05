@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationLinks renders 1`] = `
+<NavigationLinks__NavigationLinksRoot>
+  <NavigationLink
+    href="/"
+    icon="file-mock"
+    iconAlt=""
+    label="Home"
+  />
+  <NavigationLink
+    href="/streams"
+    icon="file-mock"
+    iconAlt=""
+    label="Streams"
+  />
+  <NavigationLink
+    href="/games"
+    icon="file-mock"
+    iconAlt=""
+    label="Games"
+  />
+  <NavigationLink
+    href="/communities"
+    icon="file-mock"
+    iconAlt=""
+    label="Communities"
+  />
+  <NavigationLink
+    href="/search"
+    icon="file-mock"
+    iconAlt=""
+    label="Search"
+  />
+</NavigationLinks__NavigationLinksRoot>
+`;
