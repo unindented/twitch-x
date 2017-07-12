@@ -15,12 +15,25 @@
     "url": "https://github.com/unindented/twitch-x.git"
   },
   "scripts": {
+    "clean:build": "shx rm -rf build",
+    "clean:ui": "lerna run --scope twitch-ui clean",
+    "clean:web": "lerna run --scope twitch-web clean",
+    "clean": "run-p clean:*",
     "test": "lerna run test",
+    "build:ui": "lerna run --scope twitch-ui build",
+    "build:web": "lerna run --scope twitch-web build",
+    "build": "run-p build:*",
+    "deploy:build": "shx mkdir -p build",
+    "deploy:ui": "shx cp -r projects/twitch-ui/build build/ui",
+    "deploy:web": "shx cp -r projects/twitch-web/build build/web",
+    "deploy": "run-s deploy:*",
     "postinstall": "lerna bootstrap",
     "prepush": "npm run test"
   },
   "devDependencies": {
     "husky": "^0.14.3",
-    "lerna": "^2.0.0"
+    "lerna": "^2.0.0",
+    "npm-run-all": "^4.0.2",
+    "shx": "^0.2.2"
   }
 }

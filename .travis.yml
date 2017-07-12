@@ -2,8 +2,9 @@ language: node_js
 node_js:
   - '8'
 
-env:
-  - CXX=g++-4.8
+os:
+  - linux
+  - osx
 
 addons:
   apt:
@@ -11,3 +12,19 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
+
+env:
+  global:
+    secure: "lA2EefslUw2GX9+l6FkEWC0EAFyBKptWdT8ulKu+PVmNfgJQ45yRuuMDr9B0YGdccgwEyyWeOKch8DmGkENU5WHWxPZ2D23ThoSBr0FeKmss2t7wMOKULZc0z8C7iUTZy0Zsnl2Fq/GUbeJYDGNYYU529yRnDD9Oew9iW6ZpbLYPQnr/8yYXXx3pVDf/maL5gbcT/KDjAgDwRzGF7+do1zyZD+shqpYiqofQyGqPRbdhvA8v+3Oq87vqhe2lkM7JHhBoD3P5pEEOBGVPe6vb1xDOPfqnPwB8hwDoBi/UJRPXeUl5XnV2jwK68JWpzz6cmqUIx8/8gdxAZva3XzIWPPdlB4P2cKfn8+KbtbVhd+eduYJAZV+Qae6fY998YvWr0/NKsY1Kfjxg8+vWazMzqCSaYayF29Di9yrr2b5n/vFha/r1Nr5BwtonJLMlDBem63ACZLmx3VkdK1js8UjV4OpAN8JeRKd2/9OPI4I0u47xen7UD4o6+Si00Jae5blMCsn2TFF6quv2kPrsw2GeV5zkW3cdBF9+Q44+xzvlb82eKm6Jhgfw9PwgF8FUXBJ8q8hsgwyhpP278EDToQy9XOXQf/e8HyJXfmmQ4S1so782VPeAuUtcXUxoEqYmN4ieNBAttLQAzmBtOHW7O/Qpfghas5cMe6RRcNPag/dQlKQ="
+
+before_install:
+  - if [ "$TRAVIS_OS_NAME" == "linux" ] ; then export CXX=g++-4.8 ; fi
+
+install:
+  - npm install
+
+script:
+  - npm run test
+
+after_success:
+  - ./scripts/travis.sh
