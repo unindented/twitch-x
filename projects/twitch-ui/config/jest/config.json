@@ -1,6 +1,7 @@
 {
   "rootDir": "../../",
   "cacheDirectory": ".jest",
+  "setupTestFrameworkScriptFile": "<rootDir>/config/jest/setup.js",
   "transform": {
     "^.+\\.js$": "babel-jest"
   },

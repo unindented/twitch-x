@@ -1,12 +1,16 @@
 import React from 'react'
 import {renderWithTheme} from '../utils/renderer'
-import NavigationLogo from './NavigationLogo'
+import GridRow from './GridRow'
 
-describe('NavigationLogo', () => {
+describe('GridRow', () => {
   let tree
 
   beforeEach(() => {
-    tree = renderWithTheme(<NavigationLogo />)
+    tree = renderWithTheme(
+      <GridRow>
+        foo
+      </GridRow>
+    )
   })
 
   it('renders', () => {

@@ -1,15 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavigationLink renders 1`] = `
-<NavigationLink__NavigationLinkRoot>
-  <NavigationLink__NavigationLinkReal
+.c3 {
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+.c4 {
+  display: block;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.c0 {
+  display: block;
+}
+
+.c1 {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.c1:hover {
+  background-color: #392e5c;
+}
+
+<li
+  className="c0"
+>
+  <a
+    className="c1"
     href="/"
   >
-    <NavigationItem
-      icon="home"
-      iconAlt=""
-      label="Home"
-    />
-  </NavigationLink__NavigationLinkReal>
-</NavigationLink__NavigationLinkRoot>
+    <div
+      className="c2"
+    >
+      <span
+        className="c3"
+      >
+        <img
+          alt=""
+          className="c4"
+          src="home"
+        />
+      </span>
+      <span
+        className="c5"
+      >
+        Home
+      </span>
+    </div>
+  </a>
+</li>
 `;

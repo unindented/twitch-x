@@ -1,18 +1,16 @@
 import React from 'react'
-import ShallowRenderer from 'react-test-renderer/shallow'
+import {renderWithTheme} from '../utils/renderer'
 import NavigationItemIcon from './NavigationItemIcon'
 
 describe('NavigationItemIcon', () => {
   let tree
 
   beforeEach(() => {
-    const renderer = new ShallowRenderer()
-    renderer.render(<NavigationItemIcon
+    tree = renderWithTheme(<NavigationItemIcon
       icon='home'
       iconAlt=''
       label='Home'
     />)
-    tree = renderer.getRenderOutput()
   })
 
   it('renders', () => {

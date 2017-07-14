@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageWithPlaceholder renders 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.c1 {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+<div>
+  <img
+    alt="Some image"
+    className="c0"
+    hidden={false}
+    src="data:image/svg+xml;utf8,<svg viewBox=\\"0 0 272 380\\" xmlns=\\"http://www.w3.org/2000/svg\\"><rect fill=\\"#6441a4\\" width=\\"100%\\" height=\\"100%\\" /></svg>"
+  />
+  <img
+    alt="Some image"
+    className="c1"
+    hidden={true}
+    onLoad={[Function]}
+    src="//lorempixel.com/272/380/"
+  />
+</div>
+`;

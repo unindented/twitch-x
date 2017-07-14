@@ -3,5 +3,54 @@
 exports[`App renders 1`] = `
 <Root>
   <Navigation />
+  <Main>
+    <GridRow>
+      <GridCell
+        focused={false}
+        height={380}
+        href="/games/493057"
+        image="//lorempixel.com/{width}/{height}/"
+        name="PLAYERUNKNOWN'S BATTLEGROUNDS"
+        viewers={120844}
+        width={272}
+      />
+      <GridCell
+        focused={false}
+        height={380}
+        href="/games/21779"
+        image="//lorempixel.com/{width}/{height}/"
+        name="League of Legends"
+        viewers={100040}
+        width={272}
+      />
+      <GridCell
+        focused={false}
+        height={380}
+        href="/games/488552"
+        image="//lorempixel.com/{width}/{height}/"
+        name="Overwatch"
+        viewers={41343}
+        width={272}
+      />
+      <GridCell
+        focused={false}
+        height={380}
+        href="/games/31621"
+        image="//lorempixel.com/{width}/{height}/"
+        name="Dungeons & Dragons"
+        viewers={27471}
+        width={272}
+      />
+      <GridCell
+        focused={false}
+        height={380}
+        href="/games/138585"
+        image="//lorempixel.com/{width}/{height}/"
+        name="Hearthstone"
+        viewers={25846}
+        width={272}
+      />
+    </GridRow>
+  </Main>
 </Root>
 `;

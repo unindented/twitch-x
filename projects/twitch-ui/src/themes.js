@@ -8,16 +8,34 @@ export default {
       primary: '#6441a4',
       secondary: '#4b367c',
       tertiary: '#392e5c',
-      quaternary: '#2c2541'
+      quaternary: '#2c2541',
+      highlight: '#6441a4'
     },
     font: {
       family: 'Helvetica Neue, Helvetica, Arial, sans-serif',
-      size: '16px'
+      height: '1.5',
+      sizes: {
+        base: '16px',
+        primary: '32px',
+        secondary: '16px',
+        tertiary: '13px'
+      }
     },
     layout: {
-      gap: '10px',
-      navCollapsedWidth: '50px',
-      navExpandedWidth: '200px'
+      widths: {
+        navExpanded: '200px',
+        navCollapsed: '50px'
+      },
+      gaps: {
+        big: '20px',
+        medium: '10px',
+        small: '5px'
+      },
+      borders: {
+        big: '6px',
+        medium: '3px',
+        small: '1px'
+      }
     }
   },
   tv: {
@@ -29,16 +47,34 @@ export default {
       primary: '#6441a4',
       secondary: '#4b367c',
       tertiary: '#392e5c',
-      quaternary: '#2c2541'
+      quaternary: '#2c2541',
+      highlight: '#fff'
     },
     font: {
       family: 'SamsungOne, sans-serif',
-      size: '32px'
+      height: '1.5',
+      sizes: {
+        base: '32px',
+        primary: '64px',
+        secondary: '32px',
+        tertiary: '26px'
+      }
     },
     layout: {
-      gap: '20px',
-      navCollapsedWidth: '100px',
-      navExpandedWidth: '400px'
+      widths: {
+        navExpanded: '400px',
+        navCollapsed: '100px'
+      },
+      gaps: {
+        big: '30px',
+        medium: '18px',
+        small: '12px'
+      },
+      borders: {
+        big: '8px',
+        medium: '4px',
+        small: '2px'
+      }
     }
   }
 }

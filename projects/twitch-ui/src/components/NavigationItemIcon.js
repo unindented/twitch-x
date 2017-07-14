@@ -4,10 +4,10 @@ import styled from 'styled-components'
 
 const NavigationItemIconRoot = styled.span`
   display: block;
-  width: ${props => props.theme.layout.navCollapsedWidth};
-  height: ${props => props.theme.layout.navCollapsedWidth};
+  width: ${props => props.theme.layout.widths.navCollapsed};
+  height: ${props => props.theme.layout.widths.navCollapsed};
   flex: 0 0 auto;
-  padding: ${props => props.theme.layout.gap};
+  padding: ${props => props.theme.layout.gaps.medium};
 `
 
 const NavigationItemIconImage = styled.img`

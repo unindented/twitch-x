@@ -11,7 +11,7 @@ const NavigationItemRoot = styled.div`
 
 const NavigationItemLabel = styled.span`
   flex: 1;
-  margin: 0 ${props => props.theme.layout.gap};
+  margin: 0 ${props => props.theme.layout.gaps.medium};
 `
 
 export default function NavigationItem (props) {

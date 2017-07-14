@@ -1,12 +1,12 @@
 import React from 'react'
 import {renderWithTheme} from '../utils/renderer'
-import NavigationLogo from './NavigationLogo'
+import Main from './Main'
 
-describe('NavigationLogo', () => {
+describe('Main', () => {
   let tree
 
   beforeEach(() => {
-    tree = renderWithTheme(<NavigationLogo />)
+    tree = renderWithTheme(<Main />)
   })
 
   it('renders', () => {

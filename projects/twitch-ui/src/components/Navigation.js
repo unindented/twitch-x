@@ -10,14 +10,14 @@ const NavigationRoot = styled.nav`
   left: 0;
   display: flex;
   overflow: hidden;
-  width: ${props => props.theme.layout.navCollapsedWidth};
+  width: ${props => props.theme.layout.widths.navCollapsed};
   flex-direction: column;
   background-color: ${props => props.theme.colors.quaternary};
   color: ${props => props.theme.colors.white};
   transition: width 0.2s ease-in-out;
 
   &:hover {
-    width: ${props => props.theme.layout.navExpandedWidth};
+    width: ${props => props.theme.layout.widths.navExpanded};
   }
 
   *[dir='rtl'] & {

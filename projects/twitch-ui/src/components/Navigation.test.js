@@ -1,14 +1,12 @@
 import React from 'react'
-import ShallowRenderer from 'react-test-renderer/shallow'
+import {renderWithTheme} from '../utils/renderer'
 import Navigation from './Navigation'
 
 describe('Navigation', () => {
   let tree
 
   beforeEach(() => {
-    const renderer = new ShallowRenderer()
-    renderer.render(<Navigation />)
-    tree = renderer.getRenderOutput()
+    tree = renderWithTheme(<Navigation />)
   })
 
   it('renders', () => {
