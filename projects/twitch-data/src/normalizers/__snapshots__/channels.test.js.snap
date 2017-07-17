@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`normalizers/channels .normalizeSearchChannels normalizes the payload 1`] = `
+Object {
+  "entities": Object {
+    "channels": Object {
+      "10756810": Object {
+        "game": null,
+        "id": 10756810,
+        "image": null,
+        "name": "day9",
+        "status": null,
+      },
+      "18587270": Object {
+        "game": "Dota 2",
+        "id": 18587270,
+        "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/day9tv-profile_image-2226c4b27aaf487a-300x300.png",
+        "name": "Day9tv",
+        "status": "10v10 DayKnight Festival!  Play Games w/ us!  discord.gg/day9tv",
+      },
+      "22723708": Object {
+        "game": null,
+        "id": 22723708,
+        "image": "https://static-cdn.jtvnw.net/jtv_user_pictures/day9daily-profile_image-14e040a6b9a079be-300x300.jpeg",
+        "name": "day9daily",
+        "status": "LIVE from my iPhone 4!",
+      },
+      "88064735": Object {
+        "game": "Battlefield Hardline",
+        "id": 88064735,
+        "image": null,
+        "name": "Deaths_day98",
+        "status": "BFH with friends",
+      },
+    },
+  },
+  "result": Array [
+    18587270,
+    10756810,
+    22723708,
+    88064735,
+  ],
+}
+`;

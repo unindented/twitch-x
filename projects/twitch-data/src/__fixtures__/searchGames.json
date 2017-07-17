@@ -1,0 +1,124 @@
+{
+  "games": [
+    {
+      "name": "StarCraft II",
+      "popularity": 3932,
+      "_id": 490422,
+      "giantbomb_id": 0,
+      "box": {
+        "large": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-272x380.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-136x190.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-52x72.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II-240x144.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II-120x72.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II-60x36.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20II-{width}x{height}.jpg"
+      },
+      "localized_name": "StarCraft II",
+      "locale": ""
+    },
+    {
+      "name": "StarCraft: Brood War",
+      "popularity": 196,
+      "_id": 4967,
+      "giantbomb_id": 5415,
+      "box": {
+        "large": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Brood%20War-272x380.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Brood%20War-136x190.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Brood%20War-52x72.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Brood%20War-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Brood%20War-240x144.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Brood%20War-120x72.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Brood%20War-60x36.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Brood%20War-{width}x{height}.jpg"
+      },
+      "localized_name": "StarCraft: Brood War",
+      "locale": ""
+    },
+    {
+      "name": "StarCraft",
+      "popularity": 1,
+      "_id": 11989,
+      "giantbomb_id": 13062,
+      "box": {
+        "large": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-272x380.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-136x190.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-52x72.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-240x144.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-120x72.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-60x36.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft-{width}x{height}.jpg"
+      },
+      "localized_name": "StarCraft",
+      "locale": ""
+    },
+    {
+      "name": "SC2VN",
+      "popularity": 0,
+      "_id": 459546,
+      "giantbomb_id": 45445,
+      "box": {
+        "large": "https://static-cdn.jtvnw.net/ttv-boxart/SC2VN-272x380.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-boxart/SC2VN-136x190.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-boxart/SC2VN-52x72.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-boxart/SC2VN-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "https://static-cdn.jtvnw.net/ttv-logoart/SC2VN-240x144.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-logoart/SC2VN-120x72.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-logoart/SC2VN-60x36.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-logoart/SC2VN-{width}x{height}.jpg"
+      },
+      "localized_name": "SC2VN",
+      "locale": ""
+    },
+    {
+      "name": "StarCraft: Retribution",
+      "popularity": 0,
+      "_id": 30573,
+      "giantbomb_id": 34013,
+      "box": {
+        "large": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-272x380.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-136x190.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-52x72.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Retribution-240x144.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Retribution-120x72.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Retribution-60x36.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft:%20Retribution-{width}x{height}.jpg"
+      },
+      "localized_name": "StarCraft: Retribution",
+      "locale": ""
+    },
+    {
+      "name": "StarCraft Ghost",
+      "popularity": 0,
+      "_id": 19353,
+      "giantbomb_id": 21221,
+      "box": {
+        "large": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-272x380.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-136x190.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-52x72.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-{width}x{height}.jpg"
+      },
+      "logo": {
+        "large": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20Ghost-240x144.jpg",
+        "medium": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20Ghost-120x72.jpg",
+        "small": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20Ghost-60x36.jpg",
+        "template": "https://static-cdn.jtvnw.net/ttv-logoart/StarCraft%20Ghost-{width}x{height}.jpg"
+      },
+      "localized_name": "StarCraft Ghost",
+      "locale": ""
+    }
+  ]
+}

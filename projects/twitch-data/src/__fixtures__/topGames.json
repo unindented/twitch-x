@@ -1,0 +1,101 @@
+{
+  "_total": 1375,
+  "top": [
+    {
+      "game": {
+        "name": "Counter-Strike: Global Offensive",
+        "popularity": 395984,
+        "_id": 32399,
+        "giantbomb_id": 36113,
+        "box": {
+          "large": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-272x380.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-136x190.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-52x72.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"
+        },
+        "logo": {
+          "large": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-240x144.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-120x72.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-60x36.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-logoart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"
+        },
+        "localized_name": "Counter-Strike: Global Offensive",
+        "locale": ""
+      },
+      "viewers": 393419,
+      "channels": 758
+    },
+    {
+      "game": {
+        "name": "League of Legends",
+        "popularity": 121301,
+        "_id": 21779,
+        "giantbomb_id": 24024,
+        "box": {
+          "large": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-272x380.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-136x190.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-52x72.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg"
+        },
+        "logo": {
+          "large": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-240x144.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-120x72.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-60x36.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends-{width}x{height}.jpg"
+        },
+        "localized_name": "League of Legends",
+        "locale": ""
+      },
+      "viewers": 121668,
+      "channels": 1818
+    },
+    {
+      "game": {
+        "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+        "popularity": 74641,
+        "_id": 493057,
+        "giantbomb_id": 54979,
+        "box": {
+          "large": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-272x380.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-136x190.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-52x72.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-{width}x{height}.jpg"
+        },
+        "logo": {
+          "large": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-240x144.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-120x72.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-60x36.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-logoart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-{width}x{height}.jpg"
+        },
+        "localized_name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+        "locale": ""
+      },
+      "viewers": 76787,
+      "channels": 1943
+    },
+    {
+      "game": {
+        "name": "Hearthstone",
+        "popularity": 38521,
+        "_id": 138585,
+        "giantbomb_id": 42033,
+        "box": {
+          "large": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-272x380.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-136x190.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-52x72.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg"
+        },
+        "logo": {
+          "large": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-240x144.jpg",
+          "medium": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-120x72.jpg",
+          "small": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-60x36.jpg",
+          "template": "https://static-cdn.jtvnw.net/ttv-logoart/Hearthstone-{width}x{height}.jpg"
+        },
+        "localized_name": "Hearthstone",
+        "locale": ""
+      },
+      "viewers": 38773,
+      "channels": 280
+    }
+  ]
+}
