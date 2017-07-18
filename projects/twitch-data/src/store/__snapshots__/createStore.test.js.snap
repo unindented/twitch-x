@@ -3,8 +3,26 @@
 exports[`store/createStore with no options creates a store with no additional reducers 1`] = `
 Object {
   "data": Object {
+    "channels": Object {
+      "byId": Object {},
+      "search": Array [],
+    },
+    "communities": Object {
+      "byId": Object {},
+      "top": Array [],
+    },
+    "games": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
+    },
     "session": Object {
       "token": null,
+    },
+    "streams": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
     },
   },
 }
@@ -13,8 +31,26 @@ Object {
 exports[`store/createStore with reducers creates a store with the additional reducers 1`] = `
 Object {
   "data": Object {
+    "channels": Object {
+      "byId": Object {},
+      "search": Array [],
+    },
+    "communities": Object {
+      "byId": Object {},
+      "top": Array [],
+    },
+    "games": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
+    },
     "session": Object {
       "token": null,
+    },
+    "streams": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
     },
   },
   "foo": Object {
@@ -26,8 +62,26 @@ Object {
 exports[`store/createStore with reducers processes actions 1`] = `
 Object {
   "data": Object {
+    "channels": Object {
+      "byId": Object {},
+      "search": Array [],
+    },
+    "communities": Object {
+      "byId": Object {},
+      "top": Array [],
+    },
+    "games": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
+    },
     "session": Object {
       "token": null,
+    },
+    "streams": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
     },
   },
   "foo": Object {
@@ -40,8 +94,26 @@ Object {
 exports[`store/createStore with reducers processes thunk actions 1`] = `
 Object {
   "data": Object {
+    "channels": Object {
+      "byId": Object {},
+      "search": Array [],
+    },
+    "communities": Object {
+      "byId": Object {},
+      "top": Array [],
+    },
+    "games": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
+    },
     "session": Object {
       "token": null,
+    },
+    "streams": Object {
+      "byId": Object {},
+      "search": Array [],
+      "top": Array [],
     },
   },
   "foo": Object {

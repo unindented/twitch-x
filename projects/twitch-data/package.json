@@ -20,6 +20,7 @@
     "watch": "run-p watch:*"
   },
   "peerDependencies": {
+    "immutability-helper": "^2.3.1",
     "normalizr": "^3.2.0",
     "redux": "^3.7.0",
     "redux-devtools-extension": "^2.13.0",
@@ -38,6 +39,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "immutability-helper": "^2.3.1",
     "jest": "^20.0.4",
     "normalizr": "^3.2.3",
     "npm-run-all": "^4.0.2",

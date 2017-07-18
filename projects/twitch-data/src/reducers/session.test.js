@@ -5,14 +5,14 @@ describe('reducers/session', () => {
   describe('default', () => {
     it('returns initial state', () => {
       const prevState = undefined
-      expect(reducer(prevState)).toEqual({token: null})
+      expect(reducer(prevState)).toMatchSnapshot()
     })
   })
 
   describe('LOGIN', () => {
     it('stores the token', () => {
       const prevState = {}
-      expect(reducer(prevState, login('foo'))).toEqual({token: 'foo'})
+      expect(reducer(prevState, login('foo'))).toMatchSnapshot()
     })
   })
 })

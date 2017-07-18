@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/session LOGIN stores the token 1`] = `
+Object {
+  "token": "foo",
+}
+`;
+
+exports[`reducers/session default returns initial state 1`] = `
+Object {
+  "token": null,
+}
+`;

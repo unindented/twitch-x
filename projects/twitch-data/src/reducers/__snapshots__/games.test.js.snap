@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/games LOAD_SEARCH_GAMES_SUCCESS stores the games 1`] = `
+Object {
+  "byId": Object {
+    "11989": Object {
+      "id": 11989,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-{width}x{height}.jpg",
+      "name": "StarCraft",
+    },
+    "19353": Object {
+      "id": 19353,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-{width}x{height}.jpg",
+      "name": "StarCraft Ghost",
+    },
+    "30573": Object {
+      "id": 30573,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-{width}x{height}.jpg",
+      "name": "StarCraft: Retribution",
+    },
+    "459546": Object {
+      "id": 459546,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/SC2VN-{width}x{height}.jpg",
+      "name": "SC2VN",
+    },
+    "490422": Object {
+      "id": 490422,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-{width}x{height}.jpg",
+      "name": "StarCraft II",
+    },
+    "4967": Object {
+      "id": 4967,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Brood%20War-{width}x{height}.jpg",
+      "name": "StarCraft: Brood War",
+    },
+  },
+  "search": Array [
+    490422,
+    4967,
+    11989,
+    459546,
+    30573,
+    19353,
+  ],
+}
+`;
+
+exports[`reducers/games LOAD_TOP_GAMES_SUCCESS stores the games 1`] = `
+Object {
+  "byId": Object {
+    "138585": Object {
+      "channels": 280,
+      "id": 138585,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg",
+      "name": "Hearthstone",
+      "viewers": 38773,
+    },
+    "21779": Object {
+      "channels": 1818,
+      "id": 21779,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg",
+      "name": "League of Legends",
+      "viewers": 121668,
+    },
+    "32399": Object {
+      "channels": 758,
+      "id": 32399,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg",
+      "name": "Counter-Strike: Global Offensive",
+      "viewers": 393419,
+    },
+    "493057": Object {
+      "channels": 1943,
+      "id": 493057,
+      "image": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-{width}x{height}.jpg",
+      "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+      "viewers": 76787,
+    },
+  },
+  "top": Array [
+    32399,
+    21779,
+    493057,
+    138585,
+  ],
+}
+`;
+
+exports[`reducers/games default returns initial state 1`] = `
+Object {
+  "byId": Object {},
+  "search": Array [],
+  "top": Array [],
+}
+`;

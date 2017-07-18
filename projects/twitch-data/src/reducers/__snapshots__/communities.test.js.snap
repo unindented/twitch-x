@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/communities LOAD_TOP_COMMUNITIES_SUCCESS stores the communities 1`] = `
+Object {
+  "byId": Object {
+    "2caef3bd-b3db-4eed-a748-f3ee124b33aa": Object {
+      "channels": 42,
+      "id": "2caef3bd-b3db-4eed-a748-f3ee124b33aa",
+      "image": "https://static-cdn.jtvnw.net/community-images/2caef3bd-b3db-4eed-a748-f3ee124b33aa/6e843bd8-31ae-4d89-ae48-22257a402174-185x258.png",
+      "name": "tatmanarmy",
+      "viewers": 13646,
+    },
+    "848d95be-90b3-44a5-b143-6e373754c382": Object {
+      "channels": 290,
+      "id": "848d95be-90b3-44a5-b143-6e373754c382",
+      "image": "https://static-cdn.jtvnw.net/community-images/848d95be-90b3-44a5-b143-6e373754c382/6abd3d16-0128-4a49-b7b5-8545c7c69aee-185x258.png",
+      "name": "Chill-Streams",
+      "viewers": 10516,
+    },
+    "fd0eab99-832a-4d7e-8cc0-04d73deb2e54": Object {
+      "channels": 757,
+      "id": "fd0eab99-832a-4d7e-8cc0-04d73deb2e54",
+      "image": "https://static-cdn.jtvnw.net/community-images/fd0eab99-832a-4d7e-8cc0-04d73deb2e54/2609ad13-a142-4cfd-9a7b-7386f1cc6447-185x258.jpeg",
+      "name": "VarietyStreaming",
+      "viewers": 20131,
+    },
+    "ff1e77af-551d-4993-945c-f8ceaa2a2829": Object {
+      "channels": 278,
+      "id": "ff1e77af-551d-4993-945c-f8ceaa2a2829",
+      "image": "https://static-cdn.jtvnw.net/community-images/ff1e77af-551d-4993-945c-f8ceaa2a2829/b7d6418f-32d6-48e4-8adf-1f592d9df4f8-185x258.jpeg",
+      "name": "Positivity",
+      "viewers": 12313,
+    },
+  },
+  "top": Array [
+    "fd0eab99-832a-4d7e-8cc0-04d73deb2e54",
+    "2caef3bd-b3db-4eed-a748-f3ee124b33aa",
+    "ff1e77af-551d-4993-945c-f8ceaa2a2829",
+    "848d95be-90b3-44a5-b143-6e373754c382",
+  ],
+}
+`;
+
+exports[`reducers/communities default returns initial state 1`] = `
+Object {
+  "byId": Object {},
+  "top": Array [],
+}
+`;

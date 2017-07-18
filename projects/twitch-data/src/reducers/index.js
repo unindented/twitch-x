@@ -1,1 +1,5 @@
 export {default as session} from './session'
+export {default as channels} from './channels'
+export {default as communities} from './communities'
+export {default as games} from './games'
+export {default as streams} from './streams'
