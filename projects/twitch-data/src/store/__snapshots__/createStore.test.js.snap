@@ -3,8 +3,8 @@
 exports[`store/createStore with no options creates a store with no additional reducers 1`] = `
 Object {
   "data": Object {
-    "count": Object {
-      "value": 0,
+    "session": Object {
+      "token": null,
     },
   },
 }
@@ -13,8 +13,8 @@ Object {
 exports[`store/createStore with reducers creates a store with the additional reducers 1`] = `
 Object {
   "data": Object {
-    "count": Object {
-      "value": 0,
+    "session": Object {
+      "token": null,
     },
   },
   "foo": Object {
@@ -26,8 +26,8 @@ Object {
 exports[`store/createStore with reducers processes actions 1`] = `
 Object {
   "data": Object {
-    "count": Object {
-      "value": 0,
+    "session": Object {
+      "token": null,
     },
   },
   "foo": Object {
@@ -40,8 +40,8 @@ Object {
 exports[`store/createStore with reducers processes thunk actions 1`] = `
 Object {
   "data": Object {
-    "count": Object {
-      "value": 0,
+    "session": Object {
+      "token": null,
     },
   },
   "foo": Object {

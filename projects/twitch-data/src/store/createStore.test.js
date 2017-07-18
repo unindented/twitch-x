@@ -15,7 +15,7 @@ describe('store/createStore', () => {
 
     it('types the state properly', () => {
       const state = store.getState()
-      expect(state.data.count.value).toBe(0)
+      expect(state.data.session.token).toBe(null)
     })
   })
 
@@ -58,7 +58,7 @@ describe('store/createStore', () => {
 
     it('types the state properly', () => {
       const state = store.getState()
-      expect(state.data.count.value).toBe(0)
+      expect(state.data.session.token).toBe(null)
       expect(state.foo.bar).toBe('baz')
     })
   })
