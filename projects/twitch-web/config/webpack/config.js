@@ -44,7 +44,9 @@ module.exports = (environment) => {
     },
 
     performance: {
-      hints: (isProduction ? 'error' : false)
+      hints: (isProduction ? 'error' : false),
+      maxAssetSize: 300000,
+      maxEntrypointSize: 300000
     },
 
     resolve: {
@@ -77,6 +79,7 @@ module.exports = (environment) => {
           test: /\.js$/,
           include: [
             input,
+            path.dirname(require.resolve('twitch-data')),
             path.dirname(require.resolve('twitch-ui'))
           ],
           use: {
