@@ -1,13 +1,27 @@
 {
   "presets": ["react", ["env", {
     "targets": {
-      "browsers": ["last 2 versions"]
+      "browsers": ["last 1 version"]
     }
   }]],
   "plugins": [
-    "transform-object-rest-spread",
-    ["styled-components", {
-      "minify": true
-    }]
-  ]
+    "transform-object-rest-spread"
+  ],
+
+  "env": {
+    "production": {
+      "presets": ["react", ["env", {
+        "modules": false,
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }]],
+      "plugins": [
+        "transform-object-rest-spread",
+        ["styled-components", {
+          "minify": true
+        }]
+      ]
+    }
+  }
 }
