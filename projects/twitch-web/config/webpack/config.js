@@ -17,17 +17,9 @@ module.exports = (environment) => {
   const isProduction = (environment === 'production')
 
   const config = {
-    entry: Object.assign({
+    entry: {
       'index': input
-    }, isProduction ? {
-      'vendor': [
-        'react',
-        'react-dom',
-        'styled-components',
-        'twitch-assets',
-        'twitch-ui'
-      ]
-    } : {}),
+    },
 
     output: {
       path: output,
@@ -45,13 +37,14 @@ module.exports = (environment) => {
 
     performance: {
       hints: (isProduction ? 'error' : false),
-      maxAssetSize: 300000,
-      maxEntrypointSize: 300000
+      maxAssetSize: 350000,
+      maxEntrypointSize: 350000
     },
 
     resolve: {
       // Avoid duplicates coming from internal packages.
       alias: {
+        'polished$': require.resolve('polished'),
         'prop-types$': require.resolve('prop-types'),
         'react$': require.resolve('react'),
         'styled-components$': require.resolve('styled-components')
@@ -155,10 +148,6 @@ module.exports = (environment) => {
       })
     ].concat(isProduction ? [
       new webpack.optimize.ModuleConcatenationPlugin(),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-        filename: `[name]${isProduction ? '.[chunkhash]' : ''}.js`
-      }),
       new webpack.optimize.UglifyJsPlugin({
         sourceMap: true,
         compressor: {

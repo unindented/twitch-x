@@ -19,31 +19,31 @@ export default function NavigationLinks () {
   return (
     <NavigationLinksRoot>
       <NavigationLink
-        href='/'
+        href='#/'
         icon={homeIcon}
         iconAlt=''
         label='Home'
       />
       <NavigationLink
-        href='/streams'
+        href='#/streams'
         icon={streamsIcon}
         iconAlt=''
         label='Streams'
       />
       <NavigationLink
-        href='/games'
+        href='#/games'
         icon={gamesIcon}
         iconAlt=''
         label='Games'
       />
       <NavigationLink
-        href='/communities'
+        href='#/communities'
         icon={communitiesIcon}
         iconAlt=''
         label='Communities'
       />
       <NavigationLink
-        href='/search'
+        href='#/search'
         icon={searchIcon}
         iconAlt=''
         label='Search'

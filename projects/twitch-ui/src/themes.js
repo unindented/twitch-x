@@ -24,7 +24,8 @@ export default {
     layout: {
       widths: {
         navExpanded: '200px',
-        navCollapsed: '50px'
+        navCollapsed: '50px',
+        spinner: '50px'
       },
       gaps: {
         big: '20px',
@@ -63,7 +64,8 @@ export default {
     layout: {
       widths: {
         navExpanded: '400px',
-        navCollapsed: '100px'
+        navCollapsed: '100px',
+        spinner: '100px'
       },
       gaps: {
         big: '30px',

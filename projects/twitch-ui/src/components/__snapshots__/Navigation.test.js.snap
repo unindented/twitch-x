@@ -126,7 +126,7 @@ exports[`Navigation renders 1`] = `
     >
       <a
         className="c7"
-        href="/"
+        href="#/"
       >
         <div
           className="c2"
@@ -153,7 +153,7 @@ exports[`Navigation renders 1`] = `
     >
       <a
         className="c7"
-        href="/streams"
+        href="#/streams"
       >
         <div
           className="c2"
@@ -180,7 +180,7 @@ exports[`Navigation renders 1`] = `
     >
       <a
         className="c7"
-        href="/games"
+        href="#/games"
       >
         <div
           className="c2"
@@ -207,7 +207,7 @@ exports[`Navigation renders 1`] = `
     >
       <a
         className="c7"
-        href="/communities"
+        href="#/communities"
       >
         <div
           className="c2"
@@ -234,7 +234,7 @@ exports[`Navigation renders 1`] = `
     >
       <a
         className="c7"
-        href="/search"
+        href="#/search"
       >
         <div
           className="c2"

@@ -7,7 +7,11 @@ describe('App', () => {
 
   beforeEach(() => {
     const renderer = new ShallowRenderer()
-    renderer.render(<App />)
+    renderer.render(
+      <App>
+        foo
+      </App>
+    )
     tree = renderer.getRenderOutput()
   })
 
