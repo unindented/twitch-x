@@ -1,7 +1,11 @@
 import React from 'react'
+import TopCommunities from '../containers/TopCommunities'
 
 export default function Communities () {
   return (
-    <h2>Communities</h2>
+    <TopCommunities
+      limit={20}
+      columns={5}
+    />
   )
 }

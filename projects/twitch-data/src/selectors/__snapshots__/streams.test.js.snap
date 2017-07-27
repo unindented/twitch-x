@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors/streams .getSearchStreams returns the search streams when available 1`] = `
+Array [
+  Object {
+    "channel": "foo",
+  },
+  Object {
+    "channel": "bar",
+  },
+]
+`;
+
+exports[`selectors/streams .getTopStreams returns the top streams when available 1`] = `
+Array [
+  Object {
+    "channel": "foo",
+  },
+  Object {
+    "channel": "bar",
+  },
+]
+`;

@@ -1,15 +1,13 @@
 import React from 'react'
 import {render} from '../utils/renderer'
-import App from './App'
+import Games from './Games'
 
-describe('App', () => {
+describe('Games', () => {
   let tree
 
   beforeEach(() => {
     tree = render(
-      <App>
-        foo
-      </App>
+      <Games />
     )
   })
 

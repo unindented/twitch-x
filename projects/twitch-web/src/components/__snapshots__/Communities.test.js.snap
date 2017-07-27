@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Communities renders 1`] = `
+<Connect(TopCommunities)
+  columns={5}
+  limit={20}
+/>
+`;

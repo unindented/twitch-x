@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Streams renders 1`] = `
+<Connect(TopStreams)
+  columns={5}
+  limit={25}
+/>
+`;

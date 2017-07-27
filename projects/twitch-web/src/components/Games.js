@@ -1,7 +1,11 @@
 import React from 'react'
+import TopGames from '../containers/TopGames'
 
 export default function Games () {
   return (
-    <h2>Games</h2>
+    <TopGames
+      limit={20}
+      columns={5}
+    />
   )
 }

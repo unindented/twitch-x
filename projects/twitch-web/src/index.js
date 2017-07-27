@@ -9,7 +9,7 @@ import {createStore} from 'twitch-data'
 import themes from 'twitch-ui/src/themes'
 import App from './components/App'
 import Home from './components/Home'
-import Channels from './components/Channels'
+import Streams from './components/Streams'
 import Games from './components/Games'
 import Communities from './components/Communities'
 import './index.css'
@@ -29,7 +29,7 @@ render(
       <ThemeProvider theme={themes.default}>
         <App>
           <Route exact path='/' component={Home} />
-          <Route exact path='/channels' component={Channels} />
+          <Route exact path='/streams' component={Streams} />
           <Route exact path='/games' component={Games} />
           <Route exact path='/communities' component={Communities} />
         </App>

@@ -1,15 +1,13 @@
 import React from 'react'
 import {render} from '../utils/renderer'
-import App from './App'
+import Streams from './Streams'
 
-describe('App', () => {
+describe('Streams', () => {
   let tree
 
   beforeEach(() => {
     tree = render(
-      <App>
-        foo
-      </App>
+      <Streams />
     )
   })
 

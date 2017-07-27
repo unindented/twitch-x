@@ -1,7 +1,11 @@
 import React from 'react'
+import TopStreams from '../containers/TopStreams'
 
 export default function Streams () {
   return (
-    <h2>Channels</h2>
+    <TopStreams
+      limit={25}
+      columns={5}
+    />
   )
 }

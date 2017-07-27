@@ -1,7 +1,7 @@
 {
   "presets": ["react", ["env", {
     "targets": {
-      "browsers": ["last 1 version"]
+      "browsers": ["safari >= 7"]
     }
   }]],
   "plugins": [
@@ -14,7 +14,7 @@
       "presets": ["react", ["env", {
         "modules": false,
         "targets": {
-          "browsers": ["last 2 versions"]
+          "browsers": ["safari >= 7"]
         }
       }]],
       "plugins": [

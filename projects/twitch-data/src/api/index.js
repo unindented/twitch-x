@@ -38,7 +38,8 @@ export function api (config) {
 
   const headers = new Headers({
     'Accept': responseType,
-    'Content-Type': contentType
+    'Content-Type': contentType,
+    'Client-ID': process.env.TWITCH_CLIENT_ID
   })
   if (token != null) {
     headers.append('Authorization', `OAuth ${token}`)

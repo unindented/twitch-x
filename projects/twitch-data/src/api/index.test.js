@@ -28,6 +28,8 @@ describe('api', () => {
   describe('.api', () => {
     beforeEach(() => {
       jest.clearAllMocks()
+
+      process.env.TWITCH_CLIENT_ID = 'foobar'
     })
 
     describe('with params', () => {
@@ -100,7 +102,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -116,7 +119,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -132,7 +136,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'client-id': 'foobar'
           }
         }
       })
@@ -148,7 +153,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'text/plain'
+            'content-type': 'text/plain',
+            'client-id': 'foobar'
           }
         }
       })
@@ -164,7 +170,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'client-id': 'foobar'
           }
         }
       })
@@ -189,7 +196,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -215,7 +223,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -231,7 +240,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -247,7 +257,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'client-id': 'foobar'
           }
         }
       })
@@ -263,7 +274,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'client-id': 'foobar'
           }
         }
       })
@@ -289,7 +301,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -305,7 +318,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })
@@ -321,7 +335,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'client-id': 'foobar'
           }
         }
       })
@@ -337,7 +352,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/x-www-form-urlencoded'
+            'content-type': 'application/x-www-form-urlencoded',
+            'client-id': 'foobar'
           }
         }
       })
@@ -362,7 +378,8 @@ describe('api', () => {
         headers: {
           map: {
             'accept': 'application/vnd.twitchtv.v5+json',
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'client-id': 'foobar'
           }
         }
       })

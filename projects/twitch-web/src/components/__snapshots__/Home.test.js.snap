@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders 1`] = `
+<div>
+  <Connect(TopStreams)
+    columns={5}
+    limit={5}
+  />
+  <Connect(TopGames)
+    columns={5}
+    limit={10}
+  />
+</div>
+`;

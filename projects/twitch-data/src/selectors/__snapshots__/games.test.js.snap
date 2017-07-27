@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors/games .getSearchGames returns the search games when available 1`] = `
+Array [
+  Object {
+    "name": "foo",
+  },
+  Object {
+    "name": "bar",
+  },
+]
+`;
+
+exports[`selectors/games .getTopGames returns the top games when available 1`] = `
+Array [
+  Object {
+    "name": "foo",
+  },
+  Object {
+    "name": "bar",
+  },
+]
+`;

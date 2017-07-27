@@ -1,4 +1,5 @@
 const path = require('path')
+const dotenv = require('dotenv-safe')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlPlugin = require('html-webpack-plugin')
@@ -12,6 +13,8 @@ const assets = path.resolve(root, './assets/')
 const input = path.resolve(root, './src/')
 const output = path.resolve(root, './build/')
 const serviceWorker = 'sw.js'
+
+dotenv.load()
 
 module.exports = (environment) => {
   const isProduction = (environment === 'production')
@@ -129,7 +132,8 @@ module.exports = (environment) => {
       new webpack.DefinePlugin({
         'process.env': {
           'NODE_ENV': JSON.stringify(environment),
-          'SERVICE_WORKER': JSON.stringify(serviceWorker)
+          'SERVICE_WORKER': JSON.stringify(serviceWorker),
+          'TWITCH_CLIENT_ID': JSON.stringify(process.env.TWITCH_CLIENT_ID)
         }
       }),
       new ExtractTextPlugin({

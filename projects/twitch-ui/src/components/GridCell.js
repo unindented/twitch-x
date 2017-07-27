@@ -34,14 +34,14 @@ const GridCellName = styled.h3`
   ${truncate}
 `
 
-const GridCellViewers = styled.p`
+const GridCellInfo = styled.p`
   margin: 0;
   font-size: ${props => props.theme.font.sizes.tertiary};
   ${truncate}
 `
 
 export default function GridCell (props) {
-  const {href, image, name, viewers, width, height, focused} = props
+  const {href, image, name, viewers, channels, width, height, focused} = props
 
   return (
     <GridCellRoot
@@ -59,9 +59,16 @@ export default function GridCell (props) {
       <GridCellName>
         {name}
       </GridCellName>
-      <GridCellViewers>
-        {viewers} viewers
-      </GridCellViewers>
+      {viewers && (
+        <GridCellInfo>
+          {viewers} viewers
+        </GridCellInfo>
+      )}
+      {channels && (
+        <GridCellInfo>
+          {channels} channels
+        </GridCellInfo>
+      )}
     </GridCellRoot>
   )
 }
@@ -70,7 +77,8 @@ GridCell.propTypes = {
   href: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  viewers: PropTypes.number.isRequired,
+  viewers: PropTypes.number,
+  channels: PropTypes.number,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   focused: PropTypes.bool

@@ -1,15 +1,13 @@
 import React from 'react'
 import {render} from '../utils/renderer'
-import App from './App'
+import Communities from './Communities'
 
-describe('App', () => {
+describe('Communities', () => {
   let tree
 
   beforeEach(() => {
     tree = render(
-      <App>
-        foo
-      </App>
+      <Communities />
     )
   })
 

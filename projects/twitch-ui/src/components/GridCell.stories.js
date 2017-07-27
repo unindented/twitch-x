@@ -9,13 +9,49 @@ const GridCellContainer = styled.div`
 `
 
 storiesOf('GridCell', module)
-  .add('default', () => (
+  .add('without info', () => (
+    <GridCellContainer>
+      <GridCell
+        href='/games/32399'
+        image='//lorempixel.com/{width}/{height}/'
+        name='Counter-Strike: Global Offensive'
+        width={272}
+        height={380}
+      />
+    </GridCellContainer>
+  ))
+  .add('with viewers', () => (
     <GridCellContainer>
       <GridCell
         href='/games/493057'
         image='//lorempixel.com/{width}/{height}/'
-        name='PLAYERUNKNOWN&apos;S BATTLEGROUNDS'
-        viewers={120844}
+        name='Counter-Strike: Global Offensive'
+        viewers={393419}
+        width={272}
+        height={380}
+      />
+    </GridCellContainer>
+  ))
+  .add('with channels', () => (
+    <GridCellContainer>
+      <GridCell
+        href='/games/493057'
+        image='//lorempixel.com/{width}/{height}/'
+        name='Counter-Strike: Global Offensive'
+        channels={758}
+        width={272}
+        height={380}
+      />
+    </GridCellContainer>
+  ))
+  .add('with viewers and channels', () => (
+    <GridCellContainer>
+      <GridCell
+        href='/games/493057'
+        image='//lorempixel.com/{width}/{height}/'
+        name='Counter-Strike: Global Offensive'
+        viewers={393419}
+        channels={758}
         width={272}
         height={380}
       />
