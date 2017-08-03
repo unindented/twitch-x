@@ -7,6 +7,7 @@ import createHistory from 'history/createHashHistory'
 import {ThemeProvider} from 'styled-components'
 import {createStore} from 'twitch-data'
 import themes from 'twitch-ui/src/themes'
+import ScrollToTop from './components/ScrollToTop'
 import App from './components/App'
 import Home from './components/Home'
 import Streams from './components/Streams'
@@ -27,12 +28,14 @@ render(
   <DataProvider store={store}>
     <ConnectedRouter history={history}>
       <ThemeProvider theme={themes.default}>
-        <App>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/streams' component={Streams} />
-          <Route exact path='/games' component={Games} />
-          <Route exact path='/communities' component={Communities} />
-        </App>
+        <ScrollToTop>
+          <App>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/streams' component={Streams} />
+            <Route exact path='/games' component={Games} />
+            <Route exact path='/communities' component={Communities} />
+          </App>
+        </ScrollToTop>
       </ThemeProvider>
     </ConnectedRouter>
   </DataProvider>,
