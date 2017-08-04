@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game renders 1`] = `
+<withRouter(Connect(GridOfStreams))
+  columns={5}
+  limit={20}
+  title="Top Streams for Dota 2"
+/>
+`;

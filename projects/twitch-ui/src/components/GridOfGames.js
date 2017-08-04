@@ -4,40 +4,40 @@ import Title from './Title'
 import Grid from './Grid'
 import GridCell from './GridCell'
 
-export default class TopCommunities extends PureComponent {
+export default class GridOfGames extends PureComponent {
   componentDidMount () {
-    const {loadTopCommunities} = this.props
-    loadTopCommunities()
+    const {loadGames} = this.props
+    loadGames()
   }
 
   render () {
-    const {columns, communities} = this.props
+    const {title, columns, games} = this.props
 
-    if (communities == null) {
+    if (games == null) {
       return null
     }
 
     return (
       <div>
         <Title>
-          Top Communities
+          {title}
         </Title>
         <Grid
           columns={columns}
         >
-          {communities.map(this.renderGame)}
+          {games.map(this.renderGame)}
         </Grid>
       </div>
     )
   }
 
-  renderGame (community) {
-    const {id, image, name, viewers, channels} = community
+  renderGame (game) {
+    const {id, image, name, viewers, channels} = game
 
     return (
       <GridCell
         key={id}
-        href={`#/communities/${id}`}
+        href={`#/games/${id}`}
         image={image}
         name={name}
         viewers={viewers}
@@ -49,8 +49,9 @@ export default class TopCommunities extends PureComponent {
   }
 }
 
-TopCommunities.propTypes = {
+GridOfGames.propTypes = {
+  title: PropTypes.string.isRequired,
   columns: PropTypes.number.isRequired,
-  communities: PropTypes.arrayOf(PropTypes.object),
-  loadTopCommunities: PropTypes.func
+  games: PropTypes.arrayOf(PropTypes.object),
+  loadGames: PropTypes.func
 }

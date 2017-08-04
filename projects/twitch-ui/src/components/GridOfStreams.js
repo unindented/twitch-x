@@ -4,14 +4,14 @@ import Title from './Title'
 import Grid from './Grid'
 import GridCell from './GridCell'
 
-export default class TopStreams extends PureComponent {
+export default class GridOfStreams extends PureComponent {
   componentDidMount () {
-    const {loadTopStreams} = this.props
-    loadTopStreams()
+    const {loadStreams} = this.props
+    loadStreams()
   }
 
   render () {
-    const {columns, streams} = this.props
+    const {title, columns, streams} = this.props
 
     if (streams == null) {
       return null
@@ -20,7 +20,7 @@ export default class TopStreams extends PureComponent {
     return (
       <div>
         <Title>
-          Top Streams
+          {title}
         </Title>
         <Grid
           columns={columns}
@@ -48,8 +48,9 @@ export default class TopStreams extends PureComponent {
   }
 }
 
-TopStreams.propTypes = {
+GridOfStreams.propTypes = {
+  title: PropTypes.string.isRequired,
   columns: PropTypes.number.isRequired,
   streams: PropTypes.arrayOf(PropTypes.object),
-  loadTopStreams: PropTypes.func
+  loadStreams: PropTypes.func
 }

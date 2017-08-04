@@ -1,15 +1,15 @@
 import {connect} from 'react-redux'
 import {communityActions, communitySelectors} from 'twitch-data'
-import TopCommunities from 'twitch-ui/src/components/TopCommunities'
+import GridOfCommunities from 'twitch-ui/src/components/GridOfCommunities'
 
 const mapStateToProps = (state) => ({
   communities: communitySelectors.getTopCommunities(state)
 })
 
 const mapDispatchToProps = (dispatch, props) => ({
-  loadTopCommunities: () => {
+  loadCommunities: () => {
     dispatch(communityActions.loadTopCommunities({limit: props.limit}))
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(TopCommunities)
+export default connect(mapStateToProps, mapDispatchToProps)(GridOfCommunities)

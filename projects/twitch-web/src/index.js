@@ -11,8 +11,12 @@ import ScrollToTop from './components/ScrollToTop'
 import App from './components/App'
 import Home from './components/Home'
 import Streams from './components/Streams'
+import Stream from './components/Stream'
 import Games from './components/Games'
+import Game from './components/Game'
 import Communities from './components/Communities'
+import Community from './components/Community'
+import Search from './components/Search'
 import './index.css'
 
 const history = createHistory()
@@ -32,8 +36,12 @@ render(
           <App>
             <Route exact path='/' component={Home} />
             <Route exact path='/streams' component={Streams} />
+            <Route exact path='/streams/:id' component={Stream} />
             <Route exact path='/games' component={Games} />
+            <Route exact path='/games/:id' component={Game} />
             <Route exact path='/communities' component={Communities} />
+            <Route exact path='/communities/:id' component={Community} />
+            <Route exact path='/search' component={Search} />
           </App>
         </ScrollToTop>
       </ThemeProvider>

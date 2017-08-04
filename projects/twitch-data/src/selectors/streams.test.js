@@ -1,4 +1,9 @@
-import {getTopStreams, getSearchStreams} from './streams'
+import {
+  getTopStreams,
+  getTopStreamsForGame,
+  getTopStreamsForCommunity,
+  getSearchStreams,
+} from './streams'
 
 describe('selectors/streams', () => {
   describe('.getTopStreams', () => {
@@ -16,6 +21,84 @@ describe('selectors/streams', () => {
         }
       }
       expect(getTopStreams(state)).toMatchSnapshot()
+    })
+  })
+
+  describe('.getTopStreamsForGame', () => {
+    it('returns an empty array when the game cannot be found', () => {
+      const state = {
+        data: {
+          games: {
+            byId: {
+            }
+          },
+          streams: {
+            byId: {
+              1: {channel: 'foo'}
+            }
+          }
+        }
+      }
+      expect(getTopStreamsForGame(state, { id: 42 })).toMatchSnapshot()
+    })
+
+    it('returns the top streams when available', () => {
+      const state = {
+        data: {
+          games: {
+            byId: {
+              42: {topStreams: [1, 2]}
+            }
+          },
+          streams: {
+            byId: {
+              1: {channel: 'foo'},
+              2: {channel: 'bar'},
+              3: {channel: 'baz'}
+            }
+          }
+        }
+      }
+      expect(getTopStreamsForGame(state, { id: 42 })).toMatchSnapshot()
+    })
+  })
+
+  describe('.getTopStreamsForCommunity', () => {
+    it('returns an empty array when the community cannot be found', () => {
+      const state = {
+        data: {
+          communities: {
+            byId: {
+            }
+          },
+          streams: {
+            byId: {
+              1: {channel: 'foo'}
+            }
+          }
+        }
+      }
+      expect(getTopStreamsForCommunity(state, { id: 42 })).toMatchSnapshot()
+    })
+
+    it('returns the top streams when available', () => {
+      const state = {
+        data: {
+          communities: {
+            byId: {
+              42: {topStreams: [1, 2]}
+            }
+          },
+          streams: {
+            byId: {
+              1: {channel: 'foo'},
+              2: {channel: 'bar'},
+              3: {channel: 'baz'}
+            }
+          }
+        }
+      }
+      expect(getTopStreamsForCommunity(state, { id: 42 })).toMatchSnapshot()
     })
   })
 

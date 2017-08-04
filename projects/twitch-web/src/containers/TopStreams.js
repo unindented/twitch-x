@@ -1,15 +1,15 @@
 import {connect} from 'react-redux'
 import {streamActions, streamSelectors} from 'twitch-data'
-import TopStreams from 'twitch-ui/src/components/TopStreams'
+import GridOfStreams from 'twitch-ui/src/components/GridOfStreams'
 
 const mapStateToProps = (state) => ({
   streams: streamSelectors.getTopStreams(state)
 })
 
 const mapDispatchToProps = (dispatch, props) => ({
-  loadTopStreams: () => {
+  loadStreams: () => {
     dispatch(streamActions.loadTopStreams({limit: props.limit}))
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(TopStreams)
+export default connect(mapStateToProps, mapDispatchToProps)(GridOfStreams)

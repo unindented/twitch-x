@@ -21,3 +21,29 @@ Array [
   },
 ]
 `;
+
+exports[`selectors/streams .getTopStreamsForCommunity returns an empty array when the community cannot be found 1`] = `Array []`;
+
+exports[`selectors/streams .getTopStreamsForCommunity returns the top streams when available 1`] = `
+Array [
+  Object {
+    "channel": "foo",
+  },
+  Object {
+    "channel": "bar",
+  },
+]
+`;
+
+exports[`selectors/streams .getTopStreamsForGame returns an empty array when the game cannot be found 1`] = `Array []`;
+
+exports[`selectors/streams .getTopStreamsForGame returns the top streams when available 1`] = `
+Array [
+  Object {
+    "channel": "foo",
+  },
+  Object {
+    "channel": "bar",
+  },
+]
+`;
