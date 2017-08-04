@@ -92,6 +92,37 @@ Object {
 }
 `;
 
+exports[`reducers/games LOAD_TOP_STREAMS_FOR_GAME_SUCCESS when the game is already stored stores the streams 1`] = `
+Object {
+  "byId": Object {
+    "Dota 2": Object {
+      "name": "Dota 2",
+      "topStreams": Array [
+        "dota2ti",
+        "dota2ti_ru",
+        "mrchoco",
+        "beyondthesummit_pt",
+      ],
+    },
+  },
+}
+`;
+
+exports[`reducers/games LOAD_TOP_STREAMS_FOR_GAME_SUCCESS when the game is not stored stores the streams 1`] = `
+Object {
+  "byId": Object {
+    "Dota 2": Object {
+      "topStreams": Array [
+        "dota2ti",
+        "dota2ti_ru",
+        "mrchoco",
+        "beyondthesummit_pt",
+      ],
+    },
+  },
+}
+`;
+
 exports[`reducers/games default returns initial state 1`] = `
 Object {
   "byId": Object {},

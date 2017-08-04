@@ -48,6 +48,90 @@ Object {
 }
 `;
 
+exports[`reducers/streams LOAD_TOP_STREAMS_FOR_COMMUNITY_SUCCESS stores the streams 1`] = `
+Object {
+  "byId": Object {
+    "cheese05": Object {
+      "channel": "cheese05",
+      "game": "Super Mario 64",
+      "id": "cheese05",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cheese05-{width}x{height}.jpg",
+      "status": "120 star runs for 1:38? !internet",
+      "viewers": 836,
+    },
+    "clintstevens": Object {
+      "channel": "ClintStevens",
+      "game": "Super Mario 64",
+      "id": "clintstevens",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_clintstevens-{width}x{height}.jpg",
+      "status": "120 star speedrun",
+      "viewers": 3203,
+    },
+    "lirik": Object {
+      "name": "lirik",
+    },
+    "ryuquezacotl": Object {
+      "channel": "RyuQuezacotl",
+      "game": "Diablo II: Lord of Destruction",
+      "id": "ryuquezacotl",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ryuquezacotl-{width}x{height}.jpg",
+      "status": "any% hell hc assassin and/or sorceress",
+      "viewers": 758,
+    },
+    "spikevegeta": Object {
+      "channel": "Spikevegeta",
+      "game": "Crash Bandicoot: N. Sane Trilogy",
+      "id": "spikevegeta",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_spikevegeta-{width}x{height}.jpg",
+      "status": "Crash 2 NST 100% PB/WR Attempts.",
+      "viewers": 879,
+    },
+  },
+}
+`;
+
+exports[`reducers/streams LOAD_TOP_STREAMS_FOR_GAME_SUCCESS stores the streams 1`] = `
+Object {
+  "byId": Object {
+    "beyondthesummit_pt": Object {
+      "channel": "beyondthesummit_pt",
+      "game": "Dota 2",
+      "id": "beyondthesummit_pt",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_beyondthesummit_pt-{width}x{height}.jpg",
+      "status": "[PT-BR] LGD x Liquid - The International - Fase de Grupos com @AedronsTV e @Muckirana",
+      "viewers": 4805,
+    },
+    "dota2ti": Object {
+      "channel": "dota2ti",
+      "game": "Dota 2",
+      "id": "dota2ti",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti-{width}x{height}.jpg",
+      "status": "[EN] OG vs VP - The International 2017 Group Stage",
+      "viewers": 96911,
+    },
+    "dota2ti_ru": Object {
+      "channel": "dota2ti_ru",
+      "game": "Dota 2",
+      "id": "dota2ti_ru",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_dota2ti_ru-{width}x{height}.jpg",
+      "status": "[RU] Virtus.pro vs OG - Stream A The International 2017 Group Stage Day 2",
+      "viewers": 39421,
+    },
+    "lirik": Object {
+      "name": "lirik",
+    },
+    "mrchoco": Object {
+      "channel": "MrChoco",
+      "game": "Dota 2",
+      "id": "mrchoco",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mrchoco-{width}x{height}.jpg",
+      "status": "[ESP/Perú] TI7 Fase de Grupos - Dia 2 / Mr.Choco 👑🐵",
+      "viewers": 5606,
+    },
+  },
+}
+`;
+
 exports[`reducers/streams LOAD_TOP_STREAMS_SUCCESS stores the streams 1`] = `
 Object {
   "byId": Object {

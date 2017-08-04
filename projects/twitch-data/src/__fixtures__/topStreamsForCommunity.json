@@ -1,0 +1,184 @@
+{
+  "_total": 290,
+  "streams": [
+    {
+      "_id": 25922480352,
+      "game": "Super Mario 64",
+      "broadcast_platform": "other",
+      "community_id": "6e940c4a-c42f-47d2-af83-0a2c7e47c421",
+      "community_ids": [
+        "6e940c4a-c42f-47d2-af83-0a2c7e47c421"
+      ],
+      "viewers": 3203,
+      "video_height": 720,
+      "average_fps": 30,
+      "delay": 0,
+      "created_at": "2017-08-04T01:49:33Z",
+      "is_playlist": false,
+      "stream_type": "live",
+      "preview": {
+        "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_clintstevens-80x45.jpg",
+        "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_clintstevens-320x180.jpg",
+        "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_clintstevens-640x360.jpg",
+        "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_clintstevens-{width}x{height}.jpg"
+      },
+      "channel": {
+        "mature": true,
+        "status": "120 star speedrun",
+        "broadcaster_language": "en",
+        "display_name": "ClintStevens",
+        "game": "Super Mario 64",
+        "language": "en",
+        "_id": 86268118,
+        "name": "clintstevens",
+        "created_at": "2015-03-25T09:46:11.190651Z",
+        "updated_at": "2017-08-04T03:31:31.426216Z",
+        "partner": true,
+        "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/clintstevens-profile_image-0a25e463a49557ba-300x300.png",
+        "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/clintstevens-channel_offline_image-5381a1b0614ace91-1920x1080.jpeg",
+        "profile_banner": null,
+        "profile_banner_background_color": "",
+        "url": "https://www.twitch.tv/clintstevens",
+        "views": 6450184,
+        "followers": 130801,
+        "broadcaster_type": "",
+        "description": "hey"
+      }
+    },
+    {
+      "_id": 25920034128,
+      "game": "Crash Bandicoot: N. Sane Trilogy",
+      "broadcast_platform": "other",
+      "community_id": "6e940c4a-c42f-47d2-af83-0a2c7e47c421",
+      "community_ids": [
+        "6e940c4a-c42f-47d2-af83-0a2c7e47c421",
+        "848d95be-90b3-44a5-b143-6e373754c382"
+      ],
+      "viewers": 879,
+      "video_height": 720,
+      "average_fps": 30,
+      "delay": 0,
+      "created_at": "2017-08-03T19:59:12Z",
+      "is_playlist": false,
+      "stream_type": "live",
+      "preview": {
+        "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_spikevegeta-80x45.jpg",
+        "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_spikevegeta-320x180.jpg",
+        "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_spikevegeta-640x360.jpg",
+        "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_spikevegeta-{width}x{height}.jpg"
+      },
+      "channel": {
+        "mature": false,
+        "status": "Crash 2 NST 100% PB/WR Attempts.",
+        "broadcaster_language": "en",
+        "display_name": "Spikevegeta",
+        "game": "Crash Bandicoot: N. Sane Trilogy",
+        "language": "en",
+        "_id": 18816864,
+        "name": "spikevegeta",
+        "created_at": "2010-12-18T07:32:27.696416Z",
+        "updated_at": "2017-08-04T03:32:51.084491Z",
+        "partner": true,
+        "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/spikevegeta-profile_image-4ccba409d6b18a3f-300x300.jpeg",
+        "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/a1f307e61b657edc-channel_offline_image-1920x1080.jpeg",
+        "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/spikevegeta-profile_banner-a98c34e07e75dd5a-480.jpeg",
+        "profile_banner_background_color": "",
+        "url": "https://www.twitch.tv/spikevegeta",
+        "views": 4440073,
+        "followers": 69829,
+        "broadcaster_type": "",
+        "description": "Yo! I'm gonna be speed running games and stuff. Kingdom Hearts games and Rayman games are my main plays for WR attempts, Love to interact with the chat, and if you like what you see, hit that subscriber button."
+      }
+    },
+    {
+      "_id": 25922654736,
+      "game": "Super Mario 64",
+      "broadcast_platform": "other",
+      "community_id": "6e940c4a-c42f-47d2-af83-0a2c7e47c421",
+      "community_ids": [
+        "6e940c4a-c42f-47d2-af83-0a2c7e47c421"
+      ],
+      "viewers": 836,
+      "video_height": 480,
+      "average_fps": 30,
+      "delay": 0,
+      "created_at": "2017-08-04T02:14:51Z",
+      "is_playlist": false,
+      "stream_type": "live",
+      "preview": {
+        "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cheese05-80x45.jpg",
+        "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cheese05-320x180.jpg",
+        "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cheese05-640x360.jpg",
+        "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cheese05-{width}x{height}.jpg"
+      },
+      "channel": {
+        "mature": false,
+        "status": "120 star runs for 1:38? !internet",
+        "broadcaster_language": "en",
+        "display_name": "cheese05",
+        "game": "Super Mario 64",
+        "language": "en",
+        "_id": 42360116,
+        "name": "cheese05",
+        "created_at": "2013-04-12T04:33:30.66372Z",
+        "updated_at": "2017-08-04T03:34:30.358028Z",
+        "partner": true,
+        "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/cheese05-profile_image-ac5d2089ae89057e-300x300.png",
+        "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/cheese05-channel_offline_image-c77393100f88b0eb-1920x1080.jpeg",
+        "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/cheese05-profile_banner-45d1ba6beb5a777a-480.jpeg",
+        "profile_banner_background_color": "#262626",
+        "url": "https://www.twitch.tv/cheese05",
+        "views": 1713959,
+        "followers": 51785,
+        "broadcaster_type": "",
+        "description": "I speedrun SM64 and hopefully other games soon enough :D"
+      }
+    },
+    {
+      "_id": 25922190736,
+      "game": "Diablo II: Lord of Destruction",
+      "broadcast_platform": "other",
+      "community_id": "41b01067-6b81-4d08-ba42-b30d1cbd1691",
+      "community_ids": [
+        "41b01067-6b81-4d08-ba42-b30d1cbd1691",
+        "6e940c4a-c42f-47d2-af83-0a2c7e47c421",
+        "fd0eab99-832a-4d7e-8cc0-04d73deb2e54"
+      ],
+      "viewers": 758,
+      "video_height": 720,
+      "average_fps": 60.0403632694,
+      "delay": 0,
+      "created_at": "2017-08-04T01:06:17Z",
+      "is_playlist": false,
+      "stream_type": "live",
+      "preview": {
+        "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ryuquezacotl-80x45.jpg",
+        "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ryuquezacotl-320x180.jpg",
+        "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ryuquezacotl-640x360.jpg",
+        "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ryuquezacotl-{width}x{height}.jpg"
+      },
+      "channel": {
+        "mature": true,
+        "status": "any% hell hc assassin and/or sorceress",
+        "broadcaster_language": "en",
+        "display_name": "RyuQuezacotl",
+        "game": "Diablo II: Lord of Destruction",
+        "language": "en",
+        "_id": 39392583,
+        "name": "ryuquezacotl",
+        "created_at": "2013-01-16T21:24:42.542276Z",
+        "updated_at": "2017-08-04T03:34:31.449696Z",
+        "partner": true,
+        "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/7143db3a0b8847f1-profile_image-300x300.png",
+        "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/9e2e781fe2b209ad-channel_offline_image-1920x1080.png",
+        "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/ryuquezacotl-profile_banner-d3a3121896b20696-480.png",
+        "profile_banner_background_color": "",
+        "url": "https://www.twitch.tv/ryuquezacotl",
+        "views": 3853819,
+        "followers": 47503,
+        "broadcaster_type": "",
+        "description": "Gamer. Streamer."
+      }
+    }
+  ]
+}

@@ -44,6 +44,37 @@ Object {
 }
 `;
 
+exports[`reducers/communities LOAD_TOP_STREAMS_FOR_COMMUNITY_SUCCESS when the community is already stored stores the streams 1`] = `
+Object {
+  "byId": Object {
+    "6e940c4a-c42f-47d2-af83-0a2c7e47c421": Object {
+      "name": "Speedrunning",
+      "topStreams": Array [
+        "clintstevens",
+        "spikevegeta",
+        "cheese05",
+        "ryuquezacotl",
+      ],
+    },
+  },
+}
+`;
+
+exports[`reducers/communities LOAD_TOP_STREAMS_FOR_COMMUNITY_SUCCESS when the community is not stored stores the streams 1`] = `
+Object {
+  "byId": Object {
+    "6e940c4a-c42f-47d2-af83-0a2c7e47c421": Object {
+      "topStreams": Array [
+        "clintstevens",
+        "spikevegeta",
+        "cheese05",
+        "ryuquezacotl",
+      ],
+    },
+  },
+}
+`;
+
 exports[`reducers/communities default returns initial state 1`] = `
 Object {
   "byId": Object {},

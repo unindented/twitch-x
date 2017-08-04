@@ -16,6 +16,13 @@ export default (state = initialState, action = {}) => {
         top: {$set: result}
       })
     }
+    case 'LOAD_TOP_STREAMS_FOR_GAME_SUCCESS':
+    case 'LOAD_TOP_STREAMS_FOR_COMMUNITY_SUCCESS': {
+      const {entities} = normalizeTopStreams(action.payload.response)
+      return update(state, {
+        byId: {$merge: entities.streams}
+      })
+    }
     case 'LOAD_SEARCH_STREAMS_SUCCESS': {
       const {entities, result} = normalizeSearchStreams(action.payload.response)
       return update(state, {

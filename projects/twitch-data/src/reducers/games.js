@@ -1,5 +1,7 @@
 import update from 'immutability-helper'
 import {normalizeTopGames, normalizeSearchGames} from '../normalizers/games'
+import {normalizeTopStreams} from '../normalizers/streams'
+import './extensions'
 
 const initialState = {
   byId: {},
@@ -14,6 +16,13 @@ export default (state = initialState, action = {}) => {
       return update(state, {
         byId: {$merge: entities.games},
         top: {$set: result}
+      })
+    }
+    case 'LOAD_TOP_STREAMS_FOR_GAME_SUCCESS': {
+      const id = action.payload.request
+      const {result} = normalizeTopStreams(action.payload.response)
+      return update(state, {
+        byId: {$obj: {[id]: {$obj: {topStreams: {$set: result}}}}}
       })
     }
     case 'LOAD_SEARCH_GAMES_SUCCESS': {
