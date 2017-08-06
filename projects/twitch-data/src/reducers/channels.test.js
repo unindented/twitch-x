@@ -12,7 +12,13 @@ describe('reducers/channels', () => {
 
   describe('LOAD_SEARCH_CHANNELS_SUCCESS', () => {
     it('stores the channels', () => {
-      const prevState = {}
+      const prevState = {
+        byId: {
+          dota2ti: {
+            name: 'dota2ti'
+          }
+        }
+      }
       const action = {type: 'LOAD_SEARCH_CHANNELS_SUCCESS', payload: {response: searchChannelsFixture}}
       expect(reducer(prevState, action)).toMatchSnapshot()
     })

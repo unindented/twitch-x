@@ -13,16 +13,34 @@ describe('reducers/streams', () => {
 
   describe('LOAD_TOP_STREAMS_SUCCESS', () => {
     it('stores the streams', () => {
-      const prevState = {}
-      const action = {type: 'LOAD_TOP_STREAMS_SUCCESS', payload: {response: topStreamsFixture}}
+      const prevState = {
+        byId: {
+          dota2ti: {
+            name: 'dota2ti'
+          }
+        }
+      }
+      const action = {
+        type: 'LOAD_TOP_STREAMS_SUCCESS',
+        payload: {response: topStreamsFixture}
+      }
       expect(reducer(prevState, action)).toMatchSnapshot()
     })
   })
 
   describe('LOAD_SEARCH_STREAMS_SUCCESS', () => {
     it('stores the streams', () => {
-      const prevState = {}
-      const action = {type: 'LOAD_SEARCH_STREAMS_SUCCESS', payload: {response: searchStreamsFixture}}
+      const prevState = {
+        byId: {
+          dota2ti: {
+            name: 'dota2ti'
+          }
+        }
+      }
+      const action = {
+        type: 'LOAD_SEARCH_STREAMS_SUCCESS',
+        payload: {response: searchStreamsFixture}
+      }
       expect(reducer(prevState, action)).toMatchSnapshot()
     })
   })

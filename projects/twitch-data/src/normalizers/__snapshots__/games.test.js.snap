@@ -4,45 +4,45 @@ exports[`normalizers/games .normalizeSearchGames normalizes the payload 1`] = `
 Object {
   "entities": Object {
     "games": Object {
-      "11989": Object {
-        "id": 11989,
-        "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-{width}x{height}.jpg",
-        "name": "StarCraft",
-      },
-      "19353": Object {
-        "id": 19353,
-        "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-{width}x{height}.jpg",
-        "name": "StarCraft Ghost",
-      },
-      "30573": Object {
-        "id": 30573,
-        "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-{width}x{height}.jpg",
-        "name": "StarCraft: Retribution",
-      },
-      "459546": Object {
-        "id": 459546,
+      "SC2VN": Object {
+        "id": "SC2VN",
         "image": "https://static-cdn.jtvnw.net/ttv-boxart/SC2VN-{width}x{height}.jpg",
         "name": "SC2VN",
       },
-      "490422": Object {
-        "id": 490422,
+      "StarCraft": Object {
+        "id": "StarCraft",
+        "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft-{width}x{height}.jpg",
+        "name": "StarCraft",
+      },
+      "StarCraft Ghost": Object {
+        "id": "StarCraft Ghost",
+        "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20Ghost-{width}x{height}.jpg",
+        "name": "StarCraft Ghost",
+      },
+      "StarCraft II": Object {
+        "id": "StarCraft II",
         "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-{width}x{height}.jpg",
         "name": "StarCraft II",
       },
-      "4967": Object {
-        "id": 4967,
+      "StarCraft: Brood War": Object {
+        "id": "StarCraft: Brood War",
         "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Brood%20War-{width}x{height}.jpg",
         "name": "StarCraft: Brood War",
+      },
+      "StarCraft: Retribution": Object {
+        "id": "StarCraft: Retribution",
+        "image": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft:%20Retribution-{width}x{height}.jpg",
+        "name": "StarCraft: Retribution",
       },
     },
   },
   "result": Array [
-    490422,
-    4967,
-    11989,
-    459546,
-    30573,
-    19353,
+    "StarCraft II",
+    "StarCraft: Brood War",
+    "StarCraft",
+    "SC2VN",
+    "StarCraft: Retribution",
+    "StarCraft Ghost",
   ],
 }
 `;
@@ -51,30 +51,30 @@ exports[`normalizers/games .normalizeTopGames normalizes the payload 1`] = `
 Object {
   "entities": Object {
     "games": Object {
-      "138585": Object {
-        "channels": 280,
-        "id": 138585,
-        "image": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg",
-        "name": "Hearthstone",
-        "viewers": 38773,
-      },
-      "21779": Object {
-        "channels": 1818,
-        "id": 21779,
-        "image": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg",
-        "name": "League of Legends",
-        "viewers": 121668,
-      },
-      "32399": Object {
+      "Counter-Strike: Global Offensive": Object {
         "channels": 758,
-        "id": 32399,
+        "id": "Counter-Strike: Global Offensive",
         "image": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg",
         "name": "Counter-Strike: Global Offensive",
         "viewers": 393419,
       },
-      "493057": Object {
+      "Hearthstone": Object {
+        "channels": 280,
+        "id": "Hearthstone",
+        "image": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg",
+        "name": "Hearthstone",
+        "viewers": 38773,
+      },
+      "League of Legends": Object {
+        "channels": 1818,
+        "id": "League of Legends",
+        "image": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg",
+        "name": "League of Legends",
+        "viewers": 121668,
+      },
+      "PLAYERUNKNOWN'S BATTLEGROUNDS": Object {
         "channels": 1943,
-        "id": 493057,
+        "id": "PLAYERUNKNOWN'S BATTLEGROUNDS",
         "image": "https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-{width}x{height}.jpg",
         "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
         "viewers": 76787,
@@ -82,10 +82,10 @@ Object {
     },
   },
   "result": Array [
-    32399,
-    21779,
-    493057,
-    138585,
+    "Counter-Strike: Global Offensive",
+    "League of Legends",
+    "PLAYERUNKNOWN'S BATTLEGROUNDS",
+    "Hearthstone",
   ],
 }
 `;

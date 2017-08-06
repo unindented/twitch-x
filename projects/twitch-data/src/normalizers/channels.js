@@ -2,10 +2,10 @@ import {normalize, schema} from 'normalizr'
 import {valueOrNull} from './utils'
 
 const channel = new schema.Entity('channels', {}, {
-  idAttribute: '_id',
+  idAttribute: 'name',
   processStrategy: (channel) => {
     return {
-      id: valueOrNull(channel._id),
+      id: valueOrNull(channel.name),
       status: valueOrNull(channel.status),
       name: valueOrNull(channel.display_name),
       game: valueOrNull(channel.game),

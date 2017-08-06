@@ -3,44 +3,47 @@
 exports[`reducers/streams LOAD_SEARCH_STREAMS_SUCCESS stores the streams 1`] = `
 Object {
   "byId": Object {
-    "25768374736": Object {
+    "dota2ti": Object {
+      "name": "dota2ti",
+    },
+    "esl_sc2": Object {
       "channel": "ESL_SC2",
       "game": "StarCraft II",
-      "id": 25768374736,
+      "id": "esl_sc2",
       "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_sc2-{width}x{height}.jpg",
       "status": "RERUN: Welmu vs. Elazer (PvZ) - WCS Season 3 Challenger EU - Match 12",
       "viewers": 327,
     },
-    "25771333072": Object {
-      "channel": "OgamingSC2",
-      "game": "StarCraft II",
-      "id": 25771333072,
-      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-{width}x{height}.jpg",
-      "status": "MarathOG - La suite du MarathOG",
-      "viewers": 303,
-    },
-    "25774888880": Object {
-      "channel": "wintergaming",
-      "game": "StarCraft II",
-      "id": 25774888880,
-      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wintergaming-{width}x{height}.jpg",
-      "status": "!Vodcast ❄ New sc2 players !startsc2 + !Guides for !terran/!zerg/!protoss  !youtube :)  Always commentary, never rage*",
-      "viewers": 211,
-    },
-    "25775504816": Object {
+    "lowkotv": Object {
       "channel": "LowkoTV",
       "game": "StarCraft II",
-      "id": 25775504816,
+      "id": "lowkotv",
       "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lowkotv-{width}x{height}.jpg",
       "status": "Lowko :: StarCraft Dreams :: !prime",
       "viewers": 537,
     },
+    "ogamingsc2": Object {
+      "channel": "OgamingSC2",
+      "game": "StarCraft II",
+      "id": "ogamingsc2",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-{width}x{height}.jpg",
+      "status": "MarathOG - La suite du MarathOG",
+      "viewers": 303,
+    },
+    "wintergaming": Object {
+      "channel": "wintergaming",
+      "game": "StarCraft II",
+      "id": "wintergaming",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_wintergaming-{width}x{height}.jpg",
+      "status": "!Vodcast ❄ New sc2 players !startsc2 + !Guides for !terran/!zerg/!protoss  !youtube :)  Always commentary, never rage*",
+      "viewers": 211,
+    },
   },
   "search": Array [
-    25775504816,
-    25768374736,
-    25771333072,
-    25774888880,
+    "lowkotv",
+    "esl_sc2",
+    "ogamingsc2",
+    "wintergaming",
   ],
 }
 `;
@@ -48,44 +51,47 @@ Object {
 exports[`reducers/streams LOAD_TOP_STREAMS_SUCCESS stores the streams 1`] = `
 Object {
   "byId": Object {
-    "25774304576": Object {
-      "channel": "PGL",
-      "game": "Counter-Strike: Global Offensive",
-      "id": 25774304576,
-      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pgl-{width}x{height}.jpg",
-      "status": "BIG vs Cloud9 (bo1) |  PGL Major Kraków Group Stage",
-      "viewers": 277232,
+    "dota2ti": Object {
+      "name": "dota2ti",
     },
-    "25774402160": Object {
-      "channel": "Starladder5",
-      "game": "Counter-Strike: Global Offensive",
-      "id": 25774402160,
-      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_starladder5-{width}x{height}.jpg",
-      "status": "LIVE: Vega Squadron vs Immortals | Round 2 | PGL Major Kraków Group Stage | by Sl4m & Strike",
-      "viewers": 55614,
-    },
-    "25774417072": Object {
-      "channel": "IzakOOO",
-      "game": "Counter-Strike: Global Offensive",
-      "id": 25774417072,
-      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_izakooo-{width}x{height}.jpg",
-      "status": "[PGL Major] 18:00 BIG vs. Cloud9",
-      "viewers": 31147,
-    },
-    "25774891744": Object {
+    "imaqtpie": Object {
       "channel": "imaqtpie",
       "game": "League of Legends",
-      "id": 25774891744,
+      "id": "imaqtpie",
       "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_imaqtpie-{width}x{height}.jpg",
       "status": "wait a minute is this imaqtpies stream the one and only i gotta get here and watch him play league this guy does what no one else can hes so",
       "viewers": 19208,
     },
+    "izakooo": Object {
+      "channel": "IzakOOO",
+      "game": "Counter-Strike: Global Offensive",
+      "id": "izakooo",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_izakooo-{width}x{height}.jpg",
+      "status": "[PGL Major] 18:00 BIG vs. Cloud9",
+      "viewers": 31147,
+    },
+    "pgl": Object {
+      "channel": "PGL",
+      "game": "Counter-Strike: Global Offensive",
+      "id": "pgl",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_pgl-{width}x{height}.jpg",
+      "status": "BIG vs Cloud9 (bo1) |  PGL Major Kraków Group Stage",
+      "viewers": 277232,
+    },
+    "starladder5": Object {
+      "channel": "Starladder5",
+      "game": "Counter-Strike: Global Offensive",
+      "id": "starladder5",
+      "image": "https://static-cdn.jtvnw.net/previews-ttv/live_user_starladder5-{width}x{height}.jpg",
+      "status": "LIVE: Vega Squadron vs Immortals | Round 2 | PGL Major Kraków Group Stage | by Sl4m & Strike",
+      "viewers": 55614,
+    },
   },
   "top": Array [
-    25774304576,
-    25774402160,
-    25774417072,
-    25774891744,
+    "pgl",
+    "starladder5",
+    "izakooo",
+    "imaqtpie",
   ],
 }
 `;

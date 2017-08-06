@@ -3,14 +3,14 @@ import {valueOrNull} from './utils'
 
 const processGame = (game) => {
   return {
-    id: valueOrNull(game._id),
+    id: valueOrNull(game.name),
     name: valueOrNull(game.name),
     image: valueOrNull(game.box.template)
   }
 }
 
 const topGame = new schema.Entity('games', {}, {
-  idAttribute: (value) => value.game._id,
+  idAttribute: (value) => value.game.name,
   processStrategy: ({game, viewers, channels}) => {
     return {
       ...processGame(game),
@@ -21,7 +21,7 @@ const topGame = new schema.Entity('games', {}, {
 })
 
 const searchGame = new schema.Entity('games', {}, {
-  idAttribute: '_id',
+  idAttribute: 'name',
   processStrategy: processGame
 })
 
