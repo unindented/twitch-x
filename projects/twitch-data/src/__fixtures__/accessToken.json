@@ -1,0 +1,5 @@
+{
+  "token": "{\"adblock\":false,\"player_type\":null,\"platform\":null,\"user_id\":null,\"channel\":\"dota2ti\",\"channel_id\":35630634,\"expires\":1502068676,\"chansub\":{\"view_until\":1924905600,\"restricted_bitrates\":[]},\"private\":{\"allowed_to_view\":true},\"privileged\":false,\"source_restricted\":false,\"https_required\":false,\"show_ads\":true,\"device_id\":null,\"turbo\":false,\"subscriber\":false,\"hide_ads\":false,\"partner\":true,\"game\":\"dota_2\",\"mature\":false,\"ci_gb\":false}",
+  "sig": "dd3de0185bd2aa3b680b038f2a39d16641b7f236",
+  "mobile_restricted": false
+}

@@ -1,5 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`reducers/streams LOAD_PLAYLIST_FOR_STREAM_SUCCESS when the channel is already stored stores the feeds extracted from the playlist 1`] = `
+Object {
+  "byId": Object {
+    "dota2ti": Object {
+      "feeds": Array [
+        Object {
+          "name": "1080p60 (source)",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtUBpgngKE0nzLlOFYqXG4vPgHWbGYCuLgJLbIAYCMJeuklmxHW97rD9qw0-m-u4eRJWW-j2t-FdMBPo2x_6URNNXdYQa7uiqZLbmwkY6ZZIV3t4sOKGKcKHY8Kkb63ZjZYcN9hZHAbj5QK91Mur8PwMvLUhVSKD5Q7bwprKCGzmQ8nk7WfvAkSdbBgw2mnSEfGYtlNRPCFcd4RbSb8sWDjp1FqXCET1eMycFjnwU7Cx6qQX0lMJGZocMQ9HivdIc0cBSaRvlfqmrBG1imgQ9LotW0z2Vk3tEhDGfisClv4demR6lCE3Num3Ggyng1iJGf6PWteCIPk/index-live.m3u8",
+        },
+        Object {
+          "name": "720p60",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBVijlG06HXvnZfPQQ387XIctvOWT4AqIKnHkkBggUPF6OWocRYYgKXTs6CBRzoI0BeMJ8rcK05Blzr7LjoObrfPHqy2EX60VeiW7YR0LIwbwcnyjD9tQccgdc49Z7Ab5FuwJNT_SY-cFKcYlCn_uDwqkZ-LVbK6RSks_vAG0SKmDZ1qrwz-e3_ppQUai3IrCyIQZZjKTSwjiEdfrHfB4JN9NFpymg1ZmyL---OZ7_qvZ5XNwgpk1o3jOR7XQHfSOzK4O1AuuZXCfwwzlJhBJ1yjLmpDESEOaJLN2m1Rd9BYGhsMW5BfoaDF-8PGQS3KckMTNc6A/index-live.m3u8",
+        },
+        Object {
+          "name": "720p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBdf9SIy7dYVVCR6mZP6gqPAo8DtRLnhpFl0fr_r-C1AFml1BHgab33fVpM_Lud75vX7ylZprsqNixMWp3TQOkYkQw6kzZgwRR0tv0-NPNUQgInmMFIQnJ3RAF6PwGIXloFm0_MHXxp6vXvN0jsbU26LJbsHtTTIPxljaoc4NVfr0xO9qFzO-arLKiSjtxrkxDSUzzG1EEJEX220ZvAEZ8USUFPK3JCOM4ZLmNrD7-rZfGREnKLe27O6IXGBiSVFz8ZQ8ZWMH2Fiyn0uPcJ_g3NdPfmnASEJ1z9HropXZ9_t4oHAeVz-8aDG6k-ALvL1LZScvchg/index-live.m3u8",
+        },
+        Object {
+          "name": "480p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBOlvCYKjT9MDxS2qeudKZ0r6EeQ0UxL-fZ9PcD3o0X8DPJ7vlpH8rGQUhLGiMsrKPyRclDM-JWNgbNJrMU_254N9LMpeYe_a-ZbzGw03Ysm6flGkcu82beOQNRNSSdde1-EI3hYs_ywdeiUb_Gf7emXpEMqZilQbjsOnV4MxjiczTcjJ7uC9o8ybaFzOPj-yqVIH53fqcHWy6jQlS2ufYixEVrzg5MhXJg925_c3cWC-7dWhmpbgw5I0PQ1IrOT-5JzrQHYtUszFoCyMc74dO0h1yHbMSEPoXowi-R7jTxkWI0AhBCJsaDGbkZI7wR5AmpGy7BA/index-live.m3u8",
+        },
+        Object {
+          "name": "360p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBwRH1P6Ox_Lfihar4lfplYQTRQ2krK8pkCjk9CPUX3r5sKgH7CEJf450c-6Df9vbBZuN0h0EFURJjwe8vvigyxuyKliM58vJDR2c22-tea7Zbua7c20ClE0xTjzRbAPUhZ480S2zDNLoTsCIrKfaRb20vHXlWTUyPKf1oCNJq1Mngxl2Y6htxs39Y8uN5fckEXpRZMxkCHE6KIFzq-k5XXTV-XIFa2imIO-Y2l2h0bg62KjQ-6VzpXgXE_9xFbdjP4B7gLami5hvyd8-HUQqcCZN73SYSEMcKYD6JK53C2Lp8p7Gvk54aDBw4gGhz7f6GFu2Ncg/index-live.m3u8",
+        },
+        Object {
+          "name": "160p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQB1GwlosKZy6wHQ3NfsRGlGaQ3lESq0UNg5zVG9YTLRPk2umqSil2Cj8k44jQEdK-AYchSiDVbMMtqP-Na_tdNqP8URL2AgR0o5gISMNteOY80REgGdJ4awAd_5x_IL27mJSBv4rZK0j9Y8mZlrl48JUwEsyDwrDrIn43zDZt8PnC6VpwDtwkN31j9biCsrU5_BJVRtagtbH-6hEnArlYShaIntVVqYWkvce1GCdyUQfziPHugIptk_25-BnV6NmkG0BJ9NWd7UJbZbW6iY5BUiuGyObYSEJzSF04YQTNgXWxg1E6gJk8aDGI2Q3T9jWPxbOkevw/index-live.m3u8",
+        },
+        Object {
+          "name": "audio_only",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtgBNdnyPU54DzHjF6q0CSrLv7AZS8Jv6H-KrmMR9QtNeZ9Le3l7V2CDlfJAjKgwtcnLMJnHmu7E6NAzYHU9ga_TK_lRMxFAIBtcEaV3pzi1GKKuUTvR5-yK3RCawRegR0kIN4lIYwfaRVUwYmKRLmjPDX7_uYdcPrtMwsuH6TxURGx8w_qs081KzyE-GpjQ4dhTNtPHGhNONj6DJYkKEHZwgtu1URmuLL2_BofypPD94GW7uPLMk2wKU0dPexZV0zPxV26B-SEA917MpjcZczGrDlcb_NcOI6goEhAq9JkIzK9Qfj45mJIHLH1cGgyPf7La4z_fKwvjH7I/index-live.m3u8",
+        },
+      ],
+      "name": "dota2ti",
+    },
+  },
+}
+`;
+
+exports[`reducers/streams LOAD_PLAYLIST_FOR_STREAM_SUCCESS when the channel is not stored stores the feeds extracted from the playlist 1`] = `
+Object {
+  "byId": Object {
+    "dota2ti": Object {
+      "feeds": Array [
+        Object {
+          "name": "1080p60 (source)",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtUBpgngKE0nzLlOFYqXG4vPgHWbGYCuLgJLbIAYCMJeuklmxHW97rD9qw0-m-u4eRJWW-j2t-FdMBPo2x_6URNNXdYQa7uiqZLbmwkY6ZZIV3t4sOKGKcKHY8Kkb63ZjZYcN9hZHAbj5QK91Mur8PwMvLUhVSKD5Q7bwprKCGzmQ8nk7WfvAkSdbBgw2mnSEfGYtlNRPCFcd4RbSb8sWDjp1FqXCET1eMycFjnwU7Cx6qQX0lMJGZocMQ9HivdIc0cBSaRvlfqmrBG1imgQ9LotW0z2Vk3tEhDGfisClv4demR6lCE3Num3Ggyng1iJGf6PWteCIPk/index-live.m3u8",
+        },
+        Object {
+          "name": "720p60",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBVijlG06HXvnZfPQQ387XIctvOWT4AqIKnHkkBggUPF6OWocRYYgKXTs6CBRzoI0BeMJ8rcK05Blzr7LjoObrfPHqy2EX60VeiW7YR0LIwbwcnyjD9tQccgdc49Z7Ab5FuwJNT_SY-cFKcYlCn_uDwqkZ-LVbK6RSks_vAG0SKmDZ1qrwz-e3_ppQUai3IrCyIQZZjKTSwjiEdfrHfB4JN9NFpymg1ZmyL---OZ7_qvZ5XNwgpk1o3jOR7XQHfSOzK4O1AuuZXCfwwzlJhBJ1yjLmpDESEOaJLN2m1Rd9BYGhsMW5BfoaDF-8PGQS3KckMTNc6A/index-live.m3u8",
+        },
+        Object {
+          "name": "720p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBdf9SIy7dYVVCR6mZP6gqPAo8DtRLnhpFl0fr_r-C1AFml1BHgab33fVpM_Lud75vX7ylZprsqNixMWp3TQOkYkQw6kzZgwRR0tv0-NPNUQgInmMFIQnJ3RAF6PwGIXloFm0_MHXxp6vXvN0jsbU26LJbsHtTTIPxljaoc4NVfr0xO9qFzO-arLKiSjtxrkxDSUzzG1EEJEX220ZvAEZ8USUFPK3JCOM4ZLmNrD7-rZfGREnKLe27O6IXGBiSVFz8ZQ8ZWMH2Fiyn0uPcJ_g3NdPfmnASEJ1z9HropXZ9_t4oHAeVz-8aDG6k-ALvL1LZScvchg/index-live.m3u8",
+        },
+        Object {
+          "name": "480p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBOlvCYKjT9MDxS2qeudKZ0r6EeQ0UxL-fZ9PcD3o0X8DPJ7vlpH8rGQUhLGiMsrKPyRclDM-JWNgbNJrMU_254N9LMpeYe_a-ZbzGw03Ysm6flGkcu82beOQNRNSSdde1-EI3hYs_ywdeiUb_Gf7emXpEMqZilQbjsOnV4MxjiczTcjJ7uC9o8ybaFzOPj-yqVIH53fqcHWy6jQlS2ufYixEVrzg5MhXJg925_c3cWC-7dWhmpbgw5I0PQ1IrOT-5JzrQHYtUszFoCyMc74dO0h1yHbMSEPoXowi-R7jTxkWI0AhBCJsaDGbkZI7wR5AmpGy7BA/index-live.m3u8",
+        },
+        Object {
+          "name": "360p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQBwRH1P6Ox_Lfihar4lfplYQTRQ2krK8pkCjk9CPUX3r5sKgH7CEJf450c-6Df9vbBZuN0h0EFURJjwe8vvigyxuyKliM58vJDR2c22-tea7Zbua7c20ClE0xTjzRbAPUhZ480S2zDNLoTsCIrKfaRb20vHXlWTUyPKf1oCNJq1Mngxl2Y6htxs39Y8uN5fckEXpRZMxkCHE6KIFzq-k5XXTV-XIFa2imIO-Y2l2h0bg62KjQ-6VzpXgXE_9xFbdjP4B7gLami5hvyd8-HUQqcCZN73SYSEMcKYD6JK53C2Lp8p7Gvk54aDBw4gGhz7f6GFu2Ncg/index-live.m3u8",
+        },
+        Object {
+          "name": "160p",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtQB1GwlosKZy6wHQ3NfsRGlGaQ3lESq0UNg5zVG9YTLRPk2umqSil2Cj8k44jQEdK-AYchSiDVbMMtqP-Na_tdNqP8URL2AgR0o5gISMNteOY80REgGdJ4awAd_5x_IL27mJSBv4rZK0j9Y8mZlrl48JUwEsyDwrDrIn43zDZt8PnC6VpwDtwkN31j9biCsrU5_BJVRtagtbH-6hEnArlYShaIntVVqYWkvce1GCdyUQfziPHugIptk_25-BnV6NmkG0BJ9NWd7UJbZbW6iY5BUiuGyObYSEJzSF04YQTNgXWxg1E6gJk8aDGI2Q3T9jWPxbOkevw/index-live.m3u8",
+        },
+        Object {
+          "name": "audio_only",
+          "url": "https://video-edge-7ea170.sea01.hls.ttvnw.net/v0/CtgBNdnyPU54DzHjF6q0CSrLv7AZS8Jv6H-KrmMR9QtNeZ9Le3l7V2CDlfJAjKgwtcnLMJnHmu7E6NAzYHU9ga_TK_lRMxFAIBtcEaV3pzi1GKKuUTvR5-yK3RCawRegR0kIN4lIYwfaRVUwYmKRLmjPDX7_uYdcPrtMwsuH6TxURGx8w_qs081KzyE-GpjQ4dhTNtPHGhNONj6DJYkKEHZwgtu1URmuLL2_BofypPD94GW7uPLMk2wKU0dPexZV0zPxV26B-SEA917MpjcZczGrDlcb_NcOI6goEhAq9JkIzK9Qfj45mJIHLH1cGgyPf7La4z_fKwvjH7I/index-live.m3u8",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`reducers/streams LOAD_PLAYLIST_URL_FOR_STREAM_SUCCESS when the channel is already stored stores the playlist URL 1`] = `
+Object {
+  "byId": Object {
+    "dota2ti": Object {
+      "name": "dota2ti",
+      "playlist": "http://usher.twitch.tv/api/channel/hls/dota2ti.m3u8?sig=dd3de0185bd2aa3b680b038f2a39d16641b7f236&token=%7B%22adblock%22%3Afalse%2C%22player_type%22%3Anull%2C%22platform%22%3Anull%2C%22user_id%22%3Anull%2C%22channel%22%3A%22dota2ti%22%2C%22channel_id%22%3A35630634%2C%22expires%22%3A1502068676%2C%22chansub%22%3A%7B%22view_until%22%3A1924905600%2C%22restricted_bitrates%22%3A%5B%5D%7D%2C%22private%22%3A%7B%22allowed_to_view%22%3Atrue%7D%2C%22privileged%22%3Afalse%2C%22source_restricted%22%3Afalse%2C%22https_required%22%3Afalse%2C%22show_ads%22%3Atrue%2C%22device_id%22%3Anull%2C%22turbo%22%3Afalse%2C%22subscriber%22%3Afalse%2C%22hide_ads%22%3Afalse%2C%22partner%22%3Atrue%2C%22game%22%3A%22dota_2%22%2C%22mature%22%3Afalse%2C%22ci_gb%22%3Afalse%7D&allow_audio_only=true&allow_source=true&player=twitchweb&type=any&p=5000000",
+    },
+  },
+}
+`;
+
+exports[`reducers/streams LOAD_PLAYLIST_URL_FOR_STREAM_SUCCESS when the channel is not stored stores the playlist URL 1`] = `
+Object {
+  "byId": Object {
+    "dota2ti": Object {
+      "playlist": "http://usher.twitch.tv/api/channel/hls/dota2ti.m3u8?sig=dd3de0185bd2aa3b680b038f2a39d16641b7f236&token=%7B%22adblock%22%3Afalse%2C%22player_type%22%3Anull%2C%22platform%22%3Anull%2C%22user_id%22%3Anull%2C%22channel%22%3A%22dota2ti%22%2C%22channel_id%22%3A35630634%2C%22expires%22%3A1502068676%2C%22chansub%22%3A%7B%22view_until%22%3A1924905600%2C%22restricted_bitrates%22%3A%5B%5D%7D%2C%22private%22%3A%7B%22allowed_to_view%22%3Atrue%7D%2C%22privileged%22%3Afalse%2C%22source_restricted%22%3Afalse%2C%22https_required%22%3Afalse%2C%22show_ads%22%3Atrue%2C%22device_id%22%3Anull%2C%22turbo%22%3Afalse%2C%22subscriber%22%3Afalse%2C%22hide_ads%22%3Afalse%2C%22partner%22%3Atrue%2C%22game%22%3A%22dota_2%22%2C%22mature%22%3Afalse%2C%22ci_gb%22%3Afalse%7D&allow_audio_only=true&allow_source=true&player=twitchweb&type=any&p=5000000",
+    },
+  },
+}
+`;
+
 exports[`reducers/streams LOAD_SEARCH_STREAMS_SUCCESS stores the streams 1`] = `
 Object {
   "byId": Object {

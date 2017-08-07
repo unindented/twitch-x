@@ -3,7 +3,8 @@
   "cacheDirectory": ".jest",
   "setupTestFrameworkScriptFile": "<rootDir>/config/jest/setup.js",
   "transform": {
-    "^.+\\.js$": "babel-jest"
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.m3u8$": "<rootDir>/config/jest/raw.js"
   },
   "coverageReporters": [
     "text",

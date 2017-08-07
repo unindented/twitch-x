@@ -4,7 +4,9 @@ import {
   loadTopStreams,
   loadTopStreamsForGame,
   loadTopStreamsForCommunity,
-  loadSearchStreams
+  loadSearchStreams,
+  loadPlaylistUrlForStream,
+  loadPlaylistForStream
 } from './streams'
 
 jest.mock('../api')
@@ -47,6 +49,25 @@ describe('actions/streams', () => {
       const action = {type: 'LOAD_SEARCH_STREAMS', payload: 'Dota 2'}
       const options = {query: {query: 'Dota 2', limit: 2}}
       expect(getAction).toHaveBeenLastCalledWith(action, '/search/streams', options)
+    })
+  })
+
+  describe('.loadPlaylistUrlForStream', () => {
+    it('calls `getAction` with the right parameters', () => {
+      loadPlaylistUrlForStream({id: 'dota2ti'})
+
+      const action = {type: 'LOAD_PLAYLIST_URL_FOR_STREAM', payload: 'dota2ti'}
+      const options = {params: {id: 'dota2ti'}}
+      expect(getAction).toHaveBeenLastCalledWith(action, 'http://api.twitch.tv/api/channels/{id}/access_token', options)
+    })
+  })
+
+  describe('.loadPlaylistForStream', () => {
+    it('calls `getAction` with the right parameters', () => {
+      loadPlaylistForStream({id: 'dota2ti', url: 'http://usher.twitch.tv/api/channel/hls/dota2ti.m3u8'})
+
+      const action = {type: 'LOAD_PLAYLIST_FOR_STREAM', payload: 'dota2ti'}
+      expect(getAction).toHaveBeenLastCalledWith(action, 'http://usher.twitch.tv/api/channel/hls/dota2ti.m3u8', {responseType: 'application/vnd.apple.mpegurl'})
     })
   })
 })

@@ -36,7 +36,10 @@ describe('api', () => {
       beforeEach(() => {
         const response = new Response('{"foo":"bar"}', {
           status: 200,
-          statusText: 'OK'
+          statusText: 'OK',
+          headers: {
+            'content-type': 'application/json'
+          }
         })
         jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
       })
@@ -51,7 +54,10 @@ describe('api', () => {
       beforeEach(() => {
         const response = new Response('{"foo":"bar"}', {
           status: 200,
-          statusText: 'OK'
+          statusText: 'OK',
+          headers: {
+            'content-type': 'application/json'
+          }
         })
         jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
       })
@@ -87,7 +93,10 @@ describe('api', () => {
     beforeEach(() => {
       const response = new Response('{"foo":"bar"}', {
         status: 201,
-        statusText: 'OK'
+        statusText: 'OK',
+        headers: {
+          'content-type': 'application/json'
+        }
       })
       jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
     })
@@ -182,7 +191,10 @@ describe('api', () => {
     beforeEach(() => {
       const response = new Response('{"foo":"bar"}', {
         status: 200,
-        statusText: 'OK'
+        statusText: 'OK',
+        headers: {
+          'content-type': 'application/json'
+        }
       })
       jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
     })
@@ -208,7 +220,10 @@ describe('api', () => {
     beforeEach(() => {
       const response = new Response('{"foo":"bar"}', {
         status: 200,
-        statusText: 'OK'
+        statusText: 'OK',
+        headers: {
+          'content-type': 'application/json'
+        }
       })
       jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
     })
@@ -286,7 +301,10 @@ describe('api', () => {
     beforeEach(() => {
       const response = new Response('{"foo":"bar"}', {
         status: 200,
-        statusText: 'OK'
+        statusText: 'OK',
+        headers: {
+          'content-type': 'application/json'
+        }
       })
       jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
     })
@@ -364,7 +382,10 @@ describe('api', () => {
     beforeEach(() => {
       const response = new Response('{"foo":"bar"}', {
         status: 200,
-        statusText: 'OK'
+        statusText: 'OK',
+        headers: {
+          'content-type': 'application/json'
+        }
       })
       jest.spyOn(window, 'fetch').mockReturnValue(Promise.resolve(response))
     })

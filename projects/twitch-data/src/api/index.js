@@ -1,5 +1,5 @@
 import {stringify} from 'qs'
-import {API_URL} from '../constants'
+import {KRAKEN_API_URL} from '../constants'
 import {getToken} from '../selectors/session'
 import {supplant} from '../utils/string'
 
@@ -22,7 +22,7 @@ export function api (config) {
 
   // Add base URL if necessary.
   if (url.indexOf('/') === 0) {
-    url = `${API_URL}${url}`
+    url = `${KRAKEN_API_URL}${url}`
   }
 
   // Interpolate parameters.
@@ -63,7 +63,10 @@ export function api (config) {
   return fetch(url, options)
     .then((response) => {
       if (response.ok) {
-        return response.json()
+        const contentType = response.headers.get('content-type')
+        return contentType && contentType.indexOf('application/json') >= 0
+          ? response.json()
+          : response.text()
       } else {
         throw new Error(`${response.status} ${response.statusText}`)
       }
