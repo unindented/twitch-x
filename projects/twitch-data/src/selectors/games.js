@@ -11,3 +11,8 @@ export const getSearchGames = createSelector(
   (state) => state.data.games.byId,
   (searchGameIds, gamesById) => searchGameIds.map((id) => gamesById[id])
 )
+
+export const getGame = createSelector(
+  (state, props) => state.data.games.byId[props.id],
+  (game) => game
+)

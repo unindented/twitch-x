@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`selectors/communities .getCommunity returns the community with the specified ID 1`] = `
+Object {
+  "name": "foo",
+}
+`;
+
 exports[`selectors/communities .getTopCommunities returns the top communities when available 1`] = `
 Array [
   Object {

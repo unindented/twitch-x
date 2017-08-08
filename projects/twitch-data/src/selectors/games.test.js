@@ -1,4 +1,4 @@
-import {getTopGames, getSearchGames} from './games'
+import {getTopGames, getSearchGames, getGame} from './games'
 
 describe('selectors/games', () => {
   describe('.getTopGames', () => {
@@ -34,6 +34,21 @@ describe('selectors/games', () => {
         }
       }
       expect(getSearchGames(state)).toMatchSnapshot()
+    })
+  })
+
+  describe('.getGame', () => {
+    it('returns the game with the specified ID', () => {
+      const state = {
+        data: {
+          games: {
+            byId: {
+              1: {name: 'foo'}
+            }
+          }
+        }
+      }
+      expect(getGame(state, {id: 1})).toMatchSnapshot()
     })
   })
 })

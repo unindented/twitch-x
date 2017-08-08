@@ -11,6 +11,12 @@ Array [
 ]
 `;
 
+exports[`selectors/streams .getStream returns the stream with the specified ID 1`] = `
+Object {
+  "name": "foo",
+}
+`;
+
 exports[`selectors/streams .getTopStreams returns the top streams when available 1`] = `
 Array [
   Object {

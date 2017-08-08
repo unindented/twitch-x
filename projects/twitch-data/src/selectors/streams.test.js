@@ -3,6 +3,7 @@ import {
   getTopStreamsForGame,
   getTopStreamsForCommunity,
   getSearchStreams,
+  getStream
 } from './streams'
 
 describe('selectors/streams', () => {
@@ -117,6 +118,21 @@ describe('selectors/streams', () => {
         }
       }
       expect(getSearchStreams(state)).toMatchSnapshot()
+    })
+  })
+
+  describe('.getStream', () => {
+    it('returns the stream with the specified ID', () => {
+      const state = {
+        data: {
+          streams: {
+            byId: {
+              1: {name: 'foo'}
+            }
+          }
+        }
+      }
+      expect(getStream(state, {id: 1})).toMatchSnapshot()
     })
   })
 })

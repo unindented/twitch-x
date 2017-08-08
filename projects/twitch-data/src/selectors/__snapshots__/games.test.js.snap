@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`selectors/games .getGame returns the game with the specified ID 1`] = `
+Object {
+  "name": "foo",
+}
+`;
+
 exports[`selectors/games .getSearchGames returns the search games when available 1`] = `
 Array [
   Object {

@@ -29,3 +29,8 @@ export const getSearchStreams = createSelector(
   (state) => state.data.streams.byId,
   (searchStreamIds, streamsById) => searchStreamIds.map((id) => streamsById[id])
 )
+
+export const getStream = createSelector(
+  (state, props) => state.data.streams.byId[props.id],
+  (stream) => stream
+)

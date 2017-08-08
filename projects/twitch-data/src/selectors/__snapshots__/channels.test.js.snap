@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`selectors/channels .getChannel returns the channel with the specified ID 1`] = `
+Object {
+  "name": "foo",
+}
+`;
+
 exports[`selectors/channels .getSearchChannels returns the search channels when available 1`] = `
 Array [
   Object {
