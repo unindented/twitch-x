@@ -5,6 +5,7 @@ import NavigationLinks from './NavigationLinks'
 
 const NavigationRoot = styled.nav`
   position: fixed;
+  z-index: 999;
   top: 0;
   bottom: 0;
   left: 0;

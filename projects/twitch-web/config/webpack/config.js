@@ -28,7 +28,8 @@ module.exports = (environment) => {
       path: output,
       pathinfo: !isProduction,
       publicPath: isProduction ? '/twitch-x/web/' : undefined,
-      filename: `[name]${isProduction ? '.[chunkhash]' : ''}.js`
+      filename: `[name]${isProduction ? '.[chunkhash]' : ''}.js`,
+      chunkFilename: `[name]${isProduction ? '.[chunkhash]' : ''}.js`
     },
 
     devtool: (!isProduction ? 'cheap-module-source-map' : 'source-map'),
@@ -40,8 +41,8 @@ module.exports = (environment) => {
 
     performance: {
       hints: (isProduction ? 'error' : false),
-      maxAssetSize: 350000,
-      maxEntrypointSize: 350000
+      maxAssetSize: 400000,
+      maxEntrypointSize: 400000
     },
 
     resolve: {

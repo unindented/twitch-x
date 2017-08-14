@@ -1,14 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import LiveStream from '../containers/Stream'
 
-export default function Stream (props) {
+export default function Stream () {
   return (
-    <h2>
-      {props.match.params.id}
-    </h2>
+    <LiveStream />
   )
-}
-
-Stream.propTypes = {
-  match: PropTypes.object.isRequired
 }
