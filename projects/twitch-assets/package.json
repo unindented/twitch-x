@@ -15,18 +15,25 @@
     "clean": "run-p clean:*",
     "export:all": "sketchtool export slices src/assets.sketch --output=build/ --save-for-web=YES --overwriting=YES --compact=YES",
     "export": "run-p export:*",
+    "test:eslint": "eslint .",
+    "test": "run-p test:*",
     "build:public-bg-svg": "node src/trianglify build/public/bg.svg",
     "build:public-icon-ico": "convert build/public/favicon_48x48.png build/public/favicon_32x32.png build/public/favicon_16x16.png build/public/favicon.ico",
     "build:tizen-icon-ico": "convert build/tizen/favicon_48x48.png build/tizen/favicon_32x32.png build/tizen/favicon_16x16.png build/tizen/favicon.ico",
     "build:ui-icon-ico": "convert build/ui/favicon_48x48.png build/ui/favicon_32x32.png build/ui/favicon_16x16.png build/ui/favicon.ico",
     "build:web-icon-ico": "convert build/web/favicon_48x48.png build/web/favicon_32x32.png build/web/favicon_16x16.png build/web/favicon.ico",
-    "build": "npm-run-all clean export --parallel build:*",
-    "test": "node -e \"// No tests here\""
+    "build": "npm-run-all clean export --parallel build:*"
   },
   "devDependencies": {
-    "npm-run-all": "^4.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "npm-run-all": "^4.1.2",
     "shelljs": "^0.7.8",
     "shx": "^0.2.2",
-    "trianglify": "^1.0.1"
+    "trianglify": "^1.2.0"
   }
 }
