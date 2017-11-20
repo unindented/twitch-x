@@ -4,6 +4,5 @@ exports[`Communities renders 1`] = `
 <Connect(GridOfCommunities)
   columns={5}
   limit={20}
-  title="Top Communities"
 />
 `;

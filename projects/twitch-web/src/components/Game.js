@@ -6,7 +6,7 @@ export default function Game (props) {
   const {id} = props.match.params
   return (
     <TopStreamsForGame
-      title={`Top Streams for ${id}`}
+      id={id}
       limit={20}
       columns={5}
     />

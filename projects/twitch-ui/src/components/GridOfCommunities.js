@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Title from './Title'
 import Grid from './Grid'
 import GridCell from './GridCell'
+import GridSpinner from './GridSpinner'
 
 export default class GridOfCommunities extends PureComponent {
   componentDidMount () {
@@ -11,22 +12,24 @@ export default class GridOfCommunities extends PureComponent {
   }
 
   render () {
-    const {title, columns, communities} = this.props
+    const {columns, communities} = this.props
 
-    if (communities == null) {
-      return null
-    }
-
-    return (
-      <div>
-        <Title>
-          {title}
-        </Title>
+    const content = communities == null || communities.length === 0
+      ? <GridSpinner />
+      : (
         <Grid
           columns={columns}
         >
           {communities.map(this.renderGame)}
         </Grid>
+      )
+
+    return (
+      <div>
+        <Title>
+          Top communities
+        </Title>
+        {content}
       </div>
     )
   }
@@ -50,7 +53,6 @@ export default class GridOfCommunities extends PureComponent {
 }
 
 GridOfCommunities.propTypes = {
-  title: PropTypes.string.isRequired,
   columns: PropTypes.number.isRequired,
   communities: PropTypes.arrayOf(PropTypes.object),
   loadCommunities: PropTypes.func

@@ -6,7 +6,7 @@ export default function Community (props) {
   const {id} = props.match.params
   return (
     <TopStreamsForCommunity
-      title={`Top Streams for ${id}`}
+      id={id}
       limit={20}
       columns={5}
     />

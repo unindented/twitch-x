@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Title from './Title'
 import Grid from './Grid'
 import GridCell from './GridCell'
+import GridSpinner from './GridSpinner'
 
 export default class GridOfGames extends PureComponent {
   componentDidMount () {
@@ -11,22 +12,24 @@ export default class GridOfGames extends PureComponent {
   }
 
   render () {
-    const {title, columns, games} = this.props
+    const {columns, games} = this.props
 
-    if (games == null) {
-      return null
-    }
-
-    return (
-      <div>
-        <Title>
-          {title}
-        </Title>
+    const content = games == null || games.length === 0
+      ? <GridSpinner />
+      : (
         <Grid
           columns={columns}
         >
           {games.map(this.renderGame)}
         </Grid>
+      )
+
+    return (
+      <div>
+        <Title>
+          Top games
+        </Title>
+        {content}
       </div>
     )
   }
@@ -50,7 +53,6 @@ export default class GridOfGames extends PureComponent {
 }
 
 GridOfGames.propTypes = {
-  title: PropTypes.string.isRequired,
   columns: PropTypes.number.isRequired,
   games: PropTypes.arrayOf(PropTypes.object),
   loadGames: PropTypes.func

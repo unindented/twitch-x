@@ -8,11 +8,7 @@ import Root from '../../src/components/Root'
 import themes from '../../src/themes'
 
 const Decorator = Root.extend`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  min-height: 100vh;
 `
 
 addDecorator((story) => {

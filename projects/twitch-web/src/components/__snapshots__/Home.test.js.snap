@@ -5,12 +5,10 @@ exports[`Home renders 1`] = `
   <Connect(GridOfStreams)
     columns={5}
     limit={5}
-    title="Top Streams"
   />
   <Connect(GridOfGames)
     columns={5}
     limit={10}
-    title="Top Games"
   />
 </div>
 `;

@@ -25,10 +25,6 @@ export default class StreamPlayer extends PureComponent {
   render () {
     const {stream} = this.props
 
-    if (stream == null) {
-      return null
-    }
-
     return (
       <StreamPlayerContainer>
         <StreamPlayerFrame

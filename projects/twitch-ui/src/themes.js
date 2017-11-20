@@ -68,13 +68,13 @@ export default {
         spinner: '100px'
       },
       gaps: {
-        big: '30px',
-        medium: '18px',
-        small: '12px'
+        big: '40px',
+        medium: '20px',
+        small: '10px'
       },
       borders: {
-        big: '8px',
-        medium: '4px',
+        big: '12px',
+        medium: '6px',
         small: '2px'
       }
     }

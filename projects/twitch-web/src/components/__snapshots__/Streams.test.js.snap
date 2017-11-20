@@ -4,6 +4,5 @@ exports[`Streams renders 1`] = `
 <Connect(GridOfStreams)
   columns={5}
   limit={25}
-  title="Top Streams"
 />
 `;

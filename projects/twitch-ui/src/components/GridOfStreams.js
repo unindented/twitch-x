@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Title from './Title'
 import Grid from './Grid'
 import GridCell from './GridCell'
+import GridSpinner from './GridSpinner'
 
 export default class GridOfStreams extends PureComponent {
   componentDidMount () {
@@ -11,22 +12,24 @@ export default class GridOfStreams extends PureComponent {
   }
 
   render () {
-    const {title, columns, streams} = this.props
+    const {columns, streams} = this.props
 
-    if (streams == null) {
-      return null
-    }
-
-    return (
-      <div>
-        <Title>
-          {title}
-        </Title>
+    const content = streams == null || streams.length === 0
+      ? <GridSpinner />
+      : (
         <Grid
           columns={columns}
         >
           {streams.map(this.renderStream)}
         </Grid>
+      )
+
+    return (
+      <div>
+        <Title>
+          Top streams
+        </Title>
+        {content}
       </div>
     )
   }
@@ -49,7 +52,6 @@ export default class GridOfStreams extends PureComponent {
 }
 
 GridOfStreams.propTypes = {
-  title: PropTypes.string.isRequired,
   columns: PropTypes.number.isRequired,
   streams: PropTypes.arrayOf(PropTypes.object),
   loadStreams: PropTypes.func

@@ -3,7 +3,7 @@
 exports[`Community renders 1`] = `
 <withRouter(Connect(GridOfStreams))
   columns={5}
+  id="6e940c4a-c42f-47d2-af83-0a2c7e47c421"
   limit={20}
-  title="Top Streams for 6e940c4a-c42f-47d2-af83-0a2c7e47c421"
 />
 `;

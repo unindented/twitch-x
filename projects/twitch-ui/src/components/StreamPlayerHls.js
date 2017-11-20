@@ -38,11 +38,6 @@ export default class StreamPlayer extends PureComponent {
 
   render () {
     const {stream} = this.props
-
-    if (stream == null) {
-      return null
-    }
-
     const {playlist, feeds} = stream
 
     return (
@@ -62,10 +57,6 @@ export default class StreamPlayer extends PureComponent {
 
   loadStream () {
     const {stream, loadPlaylistUrl, loadPlaylist} = this.props
-
-    if (stream == null) {
-      return
-    }
 
     if (stream.playlist == null) {
       loadPlaylistUrl()
